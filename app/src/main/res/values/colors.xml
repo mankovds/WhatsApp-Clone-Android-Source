@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="colorAccentSecondary">#FF5252</color>
+    <color name="colorPrimaryLight">#BBDEFB</color>
+    <color name="colorPrimaryLightSelect">#BBDEFB</color>
+    <color name="colorPrimaryLightRipple">#BBDEFB</color>
+
+
+    <color name="colorTabIndicator">#E6E6E6</color>
+    <color name="pendingIndicatorColor">#29bb9c</color>
+    <color name="visitedIndicatorColor">#888888</color>
+
+    <color name="colorBehindWave">#29bb9c</color>
+    <color name="colorFrontWave">#5f29bb9c</color>
+    <color name="colorStories">#FAFAFA</color>
+
+
+    <color name="colorMessageText">#757575</color>
+    <color name="colorHolder">#FFFFFF</color>
+    <color name="colorBgPlaceholder">#FFFFFF</color>
+    <color name="colorGreenProgressBars">#29bb9c</color>
+    <color name="colorRightBubbleDate">#03A9F4</color>
+    <color name="colorLeftBubbleDate">#03A9F4</color>
+    <color name="colorUnSelectedMedia">#636363</color>
+
+    <color name="colorUnSelected">#E6E6E6</color>
+
+    <color name="colorUnSelectedTab">#E6E6E6</color>
+    <color name="colorSelectedTab">#607c8a</color>
+    <color name="colorSpanSearch">#03A9F4</color>
+    <color name="colorActionMode">#607c8a</color>
+
+    <color name="colorBlueLight">#03A9F4</color>
+    <color name="colorOrangeDark">#FF5722</color>
+    <color name="colorRedDark">#E00034</color>
+    <color name="colorOrangeLight">#f85749</color>
+    <color name="colorOrange">#FF9800</color>
+    <color name="colorBlack">#ff000000</color>
+    <color name="colorBlackLightCustomToast">#ff000000</color>
+    <color name="colorBlackLight">#2d2c2c</color>
+    <color name="colorBlackOpc">#10000000</color>
+    <color name="colorBlackOpacity">#90000000</color>
+    <color name="colorPinkDark">#E91E63</color>
+    <color name="colorPinkLight">#F06898</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteLight">#21ffffff</color>
+    <color name="colorGreenLight">#0EC654</color>
+    <color name="colorGreenDark">#00E676</color>
+    <color name="colorGray">#E6E6E6</color>
+    <color name="colorGrayLighter">#EAEAEA</color>
+    <color name="colorGray3">#B6B6B6</color>
+
+    <!-- Attachements -->
+
+    <color name="colorAttachGalleryStart">#F06898</color>
+    <color name="colorAttachGalleryEnd">#E91E63</color>
+
+    <color name="colorAttachCamera">#88D8C0</color>
+    <color name="colorAttachGif">#26BBCD</color>
+    <color name="colorAttachDoc">#DA614E</color>
+    <color name="colorAttachLocation">#f7c14b</color>
+    <color name="colorAttachContact">#F06898</color>
+    <color name="colorAttachGallery">#FF5252</color>
+    <color name="colorAttachAudio">#1591E5</color>
+
+    <!--DOCS-->
+    <color name="doc">#3BAFDA</color>
+    <color name="pdf">#DA4453</color>
+    <color name="ppt">#F4BF3B</color>
+    <color name="xls">#41CE7A</color>
+    <!--DOCS-->
+
+    <!--holders -->
+
+    <!--holders colors-->
+    <color name="colorGray2">#888888</color>
+    <color name="colorGrayDark">#636363</color>
+    <color name="colorGrayLight">#EAEAEA</color>
+    <color name="colorPearl">#88D8C0</color>
+    <color name="transparent">#00000000</color>
+
+
+    <!--stories -->
+
+    <color name="colorBackProgress">#8affffff</color>
+    <color name="colorFrontProgress">@color/colorWhite</color>
+
+    <!--stories-->
+
+
+    <!--editor-->
+    <color name="checkbox_color">#ff0000</color>
+    <color name="colorBlackLighter">#5f000000</color>
+    <array name="default_colors">
+        <item>#ff0000</item>
+        <item>#00ffff</item>
+        <item>#2EC45F</item>
+        <item>#000000</item>
+    </array>
+    <!--editor-->
+</resources>

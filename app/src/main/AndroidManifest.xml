@@ -1,0 +1,496 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.strolink.whatsUp"
+    android:installLocation="auto">
+
+
+    <!-- permissions for Network -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <!-- permissions for contacts -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- Storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Audio -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--Camera-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- WebRTC Dependencies -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.CAPTURE_VIDEO_OUTPUT"
+        tools:ignore="ProtectedPermissions" />
+
+    <!--    requires Bluetooth permissions in case users are using Bluetooth devices.-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!--Location-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--additional-->
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.portrait"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="false"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.strolink.whatsUp.app.WhatsCloneApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/WhatsClone.LightTheme"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup,android:theme">
+        <!--this provider  for open file If your targetSdkVersion is 24 or higher-->
+        <provider
+            android:name="com.strolink.whatsUp.helpers.Files.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/google_application_id" />
+
+        <activity
+            android:name="com.strolink.whatsUp.activities.welcome.IntroActivity"
+            android:configChanges="locale"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- CompleteRegistrationActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.welcome.CompleteRegistrationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- WelcomeActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.welcome.WelcomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+
+        <!-- MainActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.main.MainActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" />
+
+
+        <!-- StoriesDetailsActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.stories.StoriesDetailsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode|smallestScreenSize|locale"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateUnchanged|stateAlwaysHidden|stateVisible|stateAlwaysVisible" />
+
+        <!-- StoriesReplyActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.stories.StoriesReplyActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode|smallestScreenSize|locale"
+
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <!-- StoriesSeenListActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.stories.StoriesSeenListActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode|smallestScreenSize|locale"
+            android:theme="@style/Theme.Transparent" />
+
+        <!-- StoriesListActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.stories.StoriesListActivity"
+            android:configChanges="orientation|locale" />
+
+
+        <!-- CreateStoriesText -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.stories.CreateStoriesText"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|locale"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.strolink.whatsUp.activities.media.PickerActivity"
+            android:configChanges="locale" />
+
+        <!-- CallAlertActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.call.CallAlertActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name" />
+        <!--    MessagesActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.messages.MessagesActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize|locale"
+            android:parentActivityName="com.strolink.whatsUp.activities.main.MainActivity"
+            android:windowSoftInputMode="stateUnchanged">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.strolink.whatsUp.activities.main.MainActivity" />
+        </activity>
+
+        <!-- UCropActivity -->
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:configChanges="locale"
+
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- TempActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.images.TempActivity"
+            android:configChanges="locale"
+
+            android:theme="@style/Theme.Transparent" />
+
+        <!-- MediaActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.media.MediaActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name" />
+
+        <!--  CreateGroupActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.groups.CreateGroupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!--  AddMembersToGroupActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.groups.AddMembersToGroupActivity"
+            android:configChanges="locale" />
+
+        <!--  AddNewMembersToGroupActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.groups.AddNewMembersToGroupActivity"
+            android:configChanges="locale">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <!--  TransferMessageContactsActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.messages.TransferMessageContactsActivity"
+            android:configChanges="locale">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="application/*" />
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="text/*" />
+            </intent-filter>
+        </activity>
+
+        <!-- PreferenceLanguageActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.settings.PreferenceLanguageActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name" />
+        <!--  ChatsSettingsActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.settings.ChatsSettingsActivity"
+            android:configChanges="locale" />
+        <!--  NotificationsSettingsActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.settings.NotificationsSettingsActivity"
+            android:configChanges="locale" />
+        <!--  AccountSettingsActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.settings.AccountSettingsActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_account_settings" />
+
+        <!--  ImagePreviewActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.media.ImagePreviewActivity"
+            android:configChanges="locale"
+            android:windowActionBar="false" />
+
+        <!--  VideoPlayerActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.popups.VideoPlayerActivity"
+            android:configChanges="locale"
+            android:theme="@style/Dialog"
+            android:windowActionBar="false" />
+        <!--  DeleteAccountActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.settings.DeleteAccountActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:label="@string/title_activity_delete_account"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- BlockedContactsActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.BlockedContactsActivity"
+            android:label="@string/title_blocked_contacts"
+            android:theme="@style/AppTheme" />
+
+        <!--  ChangeNumberActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.settings.ChangeNumberActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_change_number"
+            android:theme="@style/AppTheme" />
+
+        <!--  AboutActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.settings.AboutActivity"
+            android:configChanges="locale"
+            android:theme="@style/AppTheme" />
+        <!--ImageEditActivity-->
+        <activity
+            android:name="com.strolink.whatsUp.activities.media.ImageEditActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode|smallestScreenSize|locale"
+
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <!-- ProfilePreviewActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.profile.ProfilePreviewActivity"
+            android:configChanges="locale"
+            android:theme="@style/Dialog"
+            android:windowActionBar="false" />
+        <activity android:name="com.strolink.whatsUp.activities.profile.ProfileActivity" />
+
+
+        <!-- SettingsActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.settings.SettingsActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_settings" />
+
+
+        <!-- CountryActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.CountryActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_settings" />
+        <!-- CallDetailsActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.call.CallDetailsActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name" />
+        <!-- CallAlertActivity -->
+
+
+        <!-- EditProfileActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.profile.EditProfileActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:label="@string/title_activity_edit_profile"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- StatusActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.status.StatusActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_status" />
+        <!-- StatusDelete -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.popups.StatusDelete"
+            android:configChanges="locale"
+            android:theme="@style/Dialog"
+            android:windowActionBar="false" />
+        <!-- EditStatusActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.status.EditStatusActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:label="@string/title_activity_edit_status"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- EditUsernameActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.profile.EditUsernameActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:label="@string/title_activity_edit_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+
+        <!-- EditGroupActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.groups.EditGroupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:label="@string/title_activity_edit_group_name"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- NewConversationContactsActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.NewConversationContactsActivity"
+            android:configChanges="locale"
+            android:label="@string/title_select_contacts" />
+        <!-- StoriesPrivacyActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.stories.StoriesPrivacyActivity"
+            android:configChanges="locale"
+            android:label="@string/title_stories_privacy" />
+        <!-- PrivacyContactsActivity -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.stories.PrivacyContactsActivity"
+            android:configChanges="locale" />
+        <!--CrashActivity-->
+        <activity
+            android:name="com.strolink.whatsUp.activities.CrashActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="catch_error_activity_whatsclone" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--VideoEditorActivity-->
+
+        <activity
+            android:name="com.strolink.whatsUp.activities.media.VideoEditorActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode|smallestScreenSize|locale"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+        <!-- WallpaperSelector -->
+        <activity
+            android:name="com.strolink.whatsUp.activities.popups.WallpaperSelector"
+            android:configChanges="locale"
+            android:theme="@style/Dialog"
+            android:windowActionBar="false" />
+        <!--calls -->
+
+
+        <activity
+            android:name="com.strolink.whatsUp.activities.call.AudioCallView"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.strolink.whatsUp.activities.call.VideoCallView"
+            android:configChanges="locale"
+            android:label="@string/app_name" />
+
+        <activity android:name="com.strolink.whatsUp.activities.call.IncomingCallScreen">
+
+            <intent-filter>
+
+                <action android:name="com.groupchat.viewer.AudioVideoCall.IncomingCallScreen" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.strolink.whatsUp.activities.media.GiphyActivity"
+            android:configChanges="touchscreen|keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.strolink.whatsUp.activities.media.LocationActivity"
+            android:configChanges="locale"
+            android:label="@string/app_name" />
+
+
+        <!-- Intent service for verification Code  -->
+        <service
+            android:name="com.strolink.whatsUp.services.SMSVerificationService"
+            android:exported="false" />
+
+
+        <receiver android:name="com.strolink.whatsUp.services.receivers.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!--mqtt service-->
+        <service android:name="org.eclipse.paho.android.service.MqttService">
+
+
+        </service>
+
+        <service
+            android:name="com.strolink.whatsUp.jobs.mqtt.MqttMessageService"
+            android:label="@string/app_service_name">
+
+        </service>
+
+    </application>
+
+</manifest>

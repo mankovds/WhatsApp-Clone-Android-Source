@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Date format -->
+    <string name="date_format_yesterday">Yesterday</string>
+
+    <string name="number">Număr de Telefon Mobil</string>
+    <string name="NoMessages">Nu există nici o conversație încă, puteți începe una acum</string>
+    <string name="NoCalls">Nu există apeluri încă, puteți începe unul acum</string>
+    <string name="NoContacts">Nu există nici un contact .Trebuie a încerca din nou mai târziu sau adăugați unul nou</string>
+    <string name="NoResult">nimic</string>
+    <string name="error_response_contacts">Nu pot fi actualizate contactele.</string>
+    <string name="name_is_too_short">numele sunt prea scurte</string>
+    <string name="select_picture">selectați o imagine</string>
+    <string name="new_group">Grup nou</string>
+    <string name="status">Statusul</string>
+    <string name="settings">Setări</string>
+    <string name="refresh_contacts">Actualizează</string>
+    <string name="search">Caută</string>
+    <string name="add_contact">Adăuga un Contact</string>
+    <string name="new_message">Mesaj Nou</string>
+    <string name="title_activity_add_members_to_group">Nou grup</string>
+    <string name="title_activity_settings">Setări</string>
+    <string name="title_activity_edit_profile">Profil</string>
+    <string name="edit">Editați</string>
+    <string name="view_in_ad_book">Vizualizați în agenda</string>
+    <string name="next">Următor</string>
+    <string name="set_back_and_keep_calm_you_will_receive_an_sms_of_verification">Pastrati calmul veți primi un sms de verificare</string>
+    <string name="resend">Nu am primit niciun cod? retrimită</string>
+    <string name="enter_the_code_below_to_verify">Introduceti codul de mai jos pentru a verifica</string>
+    <string name="enter_your_code">-- -- -- -- -- --</string>
+    <string name="ok">OK</string>
+    <string name="please_enter_your_ver_code">Vă rugăm să introduceți codul de verificare</string>
+    <string name="enter_a_val_number">Introduceți un telefon mobil valid</string>
+    <string name="invite">INVITĂ</string>
+    <string name="your_current_status">Curent Status</string>
+    <string name="select_your_new_status">Selectați statusul nou</string>
+    <string name="title_activity_status">Status</string>
+    <string name="Yes">Da</string>
+    <string name="No">Nu</string>
+    <string name="delete">Ștergere</string>
+    <string name="delete_status">Ștergere statusul</string>
+    <string name="cancel">Anulează</string>
+    <string name="Ok">OK</string>
+    <string name="write_something">Scrieți ceva</string>
+    <string name="title_activity_edit_status">Editați statusul</string>
+    <string name="deleteALL">Șterge tot</string>
+    <string name="oops_something">Hopa ceva a mers prost </string>
+    <string name="oops_something_crashed">Hopa !! ceva a mers prost. Vă rugăm să trimiteți un Mesaj la dezvoltator</string>
+    <string name="no_status"> Nici un Status </string>
+    <string name="no_username"> nici un nume de utilizator </string>
+    <string name="edit_status_activity_title">Modificarea stării</string>
+    <string name="title_activity_edit_name">Introduceți numele dvs.</string>
+    <string name="title_select_contacts">Selectați Persoana</string>
+    <string name="success_response_contacts">Contactul dumneavoastră a-fost actualizat</string>
+
+    <string name="exit">Exit</string>
+    <string name="shareContact">Share Contactați</string>
+
+    <!--actions user -->
+    <string name="isTyping">Scrie  …</string>
+    <string name="isOffline">Neconectat</string>
+    <string name="isOnline">Conectat</string>
+
+
+    <!--end date format-->
+    <string name="search_">Caută …</string>
+    <string name="add_new_member">Adauga</string>
+    <string name="type_group_subject_here">Tipul grupului subiect aici …</string>
+    <string name="provide_group_subject_and_optional_group_icon">Furnizarea de grup și pictograma opțională de grup subiect</string>
+    <string name="title_activity_edit_group_name">Introduceți nou subiect</string>
+    <string name="attach_camera">Camera</string>
+    <string name="attach_gallery">Image</string>
+    <string name="media">Media</string>
+    <string name="clear_chat">Șterge chat</string>
+    <string name="view_contact">Vizualizare contactul</string>
+    <string name="group_info">Informații despre grup</string>
+    <string name="search_hint">Caută …</string>
+    <string name="alert_message_delete_conversation">Delete chat. Are you sure?</string>
+    <string name="hold_to_record">Mențineți apăsat pentru a înregistra</string>
+
+    <!-- Permissions strings start -->
+    <string name="record_audio_permission_message">permisiunea de înregistrare audio Vă permite să înregistreze audio. Vă rugăm să așteptați în setările aplicației pentru funcționalitate suplimentară.</string>
+    <string name="location_permission_message">get Location permission allows you access to your contacts. Please allow in App Settings for additional functionality.</string>
+    <string name="write_storage_permission_message">Scrieți permisiunea externă ne permite accesul la fișierele media. Vă rugăm să așteptați în setările aplicației pentru funcționalitate suplimentară.</string>
+    <string name="write_contacts_permission_message">Contacte Scrieți permisiune acces la contactele. Vă rugăm să așteptați în setările aplicației pentru funcționalitate suplimentară.</string>
+
+    <!--Permissions strings end -->
+
+    <string name="deleting_chat">" Ștergerea de chat … "</string>
+    <string name="copy_message">Copie</string>
+    <string name="transfer_message">Redirecționare</string>
+    <string name="message_delete">Ștergeți mesajul?</string>
+    <string name="message_copy">Text mesaj</string>
+
+    <!--settings strings-->
+    <string name="notifications">Notificări</string>
+    <string name="chats">Chats</string>
+    <string name="account">Cont</string>
+    <string name="delete_my_account">Șterge contul meu</string>
+    <string name="chat_settings">Setări pentru chat</string>
+    <string name="enter_key_off">Tasta Enter va adăuga o nouă linie</string>
+    <string name="enter_key_on">Tasta Enter va trimite mesajele</string>
+    <string name="enter_key">Tasta Enter este trimite</string>
+    <string name="message_font_size">Marime de Fonturi</string>
+    <string name="message_font_size_summary">Dimensiunea fontului pentru mesajele</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="conversation_tones_off">Redare sunete pentru mesajele primite și trimise</string>
+    <string name="message_notifications_settings">Notificări de Mesaje</string>
+    <string name="notifications_settings_tone">Notificări ton</string>
+    <string name="default_settings">Default</string>
+    <string name="message_notifications_settings_vibrate">Vibrare</string>
+    <string name="message_notifications_settings_light">Light</string>
+    <string name="call_notifications_settings_vibrate">Vibrare</string>
+    <string name="conversation_tones">Tonuri de Conversații</string>
+    <string name="message_group_notifications_settings">Notificări pentru grupuri</string>
+    <string name="title_activity_delete_account">ştergeţi contul</string>
+    <string name="title_activity_change_number">Modificați numărul de telefon</string>
+    <string name="title_activity_account_settings">Account</string>
+    <string name="call_notifications_settings">Notificările de Apeluri</string>
+    <string name="call_ringtone">Ton de apel</string>
+    <string name="message_notifications_settings_tone_silent">Silent</string>
+    <string name="call_notifications_settings_tone_silent">Silent</string>
+    <string name="select_one_at_least">"Cel puțin unul trebuie să selectați "</string>
+    <string name="participants">Participanți :</string>
+    <string name="create_group_failed">Crearea de grup nu a reușit</string>
+    <string name="slide_to_cancel_audio">Slide Pentru a Anulează</string>
+    <string name="message_is_copied">Mesaj Copiat</string>
+    <string name="of">" din "</string>
+    <string name="failed_upload_image">"Nu sa putut încărca fotografia "</string>
+
+    <!--group adapters start -->
+    <string name="exit_group">Iesire \"</string>
+    <string name="group_ex">\" grup?</string>
+    <string name="exiting_group_dialog">" A ieși din grup … "</string>
+    <string name="deleting_group_dialog">" Ștergerea grupului … "</string>
+    <string name="created_by_you_at">Creat ieri de tine la</string>
+    <string name="created_by">"Creat de "</string>
+    <string name="group_at">la</string>
+    <string name="failed_to_delete_this_group_check_connection">Nu a reușit să ștergeți acest grup verificați conexiunea</string>
+    <string name="failed_to_exit_this_group_check_connection">Nu a reușit să ieși din acest grup verificați conexiunea</string>
+    <string name="adding_new_status">Adăugarea statusul nou …</string>
+    <string name="add_to_group">"Adăuga "</string>
+    <string name="member_to_group">" membru grupului"</string>
+    <string name="adding_member">" Adăuga membru … "</string>
+    <string name="you">tu</string>
+    <!--group member options start -->
+    <string name="message_group_option">"Mesaje "</string>
+    <string name="view_group_option">"View "</string>
+    <string name="make_admin_group_option"> an admin</string>
+    <string name="make_member_group_option"> member</string>
+    <string name="make_group_option"> Creasă </string>
+    <string name="remove_group_option">"șterge "</string>
+    <!--group member options end -->
+    <string name="remove_from_group">"șterge "</string>
+    <string name="from_group">" din grup"</string>
+    <string name="failed_to_make_member_as_admin">Nu s-a face acest membru(e) să aibă un administrator vă rugăm a încerca din nou mai târziu</string>
+    <string name="failed_to_remove_member">Nu s-a elimina membru(i), vă rugăm a încerca din nou mai târziu</string>
+    <!--group adapters end -->
+    <!--conversations and messages  adapters start-->
+    <string name="you_created_this_group">Ați creat acest grup</string>
+    <string name="he_created_this_group">" creat acest grup"</string>
+    <string name="you_left">Ai plecat</string>
+    <string name="he_left">" a plecat"</string>
+    <string name="no_application_to_view_pdf">Nicio aplicație disponibilă pentru a vizualiza PDF</string>
+    <!--conversations and messages adapters start-->
+    <string name="transfer_message_to">"Transfer  message or Share content to "</string>
+    <string name="no_app_to_play_audio">"Nicio aplicație disponibilă pentru a reda audio "</string>
+    <string name="delete_all_status_dialog">Ștergerea tuturor stărilor …</string>
+    <string name="deleting">Șterge …</string>
+    <string name="updating_status">Actualizarea statusul …</string>
+    <string name="your_status_updated_successfully">statusul dvs. a fost șters cu succes</string>
+
+
+    <string name="reply_message">Răspunde</string>
+
+
+    <string name="message_notifications_settings_vibrate_off">Vibrare Off</string>
+    <string name="message_notifications_settings_vibrate_on">Vibrare On</string>
+    <string name="call_notifications_settings_vibrate_off">Vibrare Off</string>
+    <string name="call_notifications_settings_vibrate_on">Vibrare On</string>
+    <string name="enjoy_it">Bucurați-vă</string>
+    <string name="app_version">"Version "</string>
+    <string name="alert_message_delete_account">Sunteți sigur că doriți să ștergeți contul dvs.</string>
+    <string name="unexpected_reponse_from_server">Răspuns neașteptat de la server</string>
+    <string name="you_send_messages"> Nu puteți trimite mesaje în acest grupului Nu. Pentru că ești un participant de-a lungul</string>
+    <string name="failed_exit_group">Nu a reușit să iasă din grupa</string>
+    <string name="this_video_is_not_exist">Acest videoclip nu mai esta disponibil</string>
+    <string name="this_image_is_not_exist">Această imagine nu mai există</string>
+    <string name="this_audio_is_not_exist">Acest audio nu mai există</string>
+    <string name="this_document_is_not_exist">Acest document nu mai există</string>
+
+    <!--Directories strings-->
+
+    <string name="profile_photos">Poze de Profil</string>
+    <string name="images_directory">Poze</string>
+    <string name="data_cache_directory">Backups</string>
+    <string name="videos_directory">Video</string>
+    <string name="audios_directory">Audio</string>
+    <string name="documents_directory">Documente</string>
+    <string name="directory_wallpaper">Wallpaper</string>
+    <string name="directory_sent">Trimete</string>
+    <string name="video_thumbnail">Thumbnail</string>
+    <string name="image_saved">Imagine salvată</string>
+    <string name="save_to_gallery">Salvați în galeria</string>
+    <string name="shareItem">Partajeaza</string>
+    <string name="this_message_empty">Acest post este gol</string>
+    <string name="share_message">Partajeaza</string>
+    <string name="you_can_share_more_then_one">Nu poți distribui mai mult de un articol</string>
+    <!--others -->
+    <string name="add_to_you_contact">Adăugați acest la lista dvs. Persoana de contact </string>
+    <string name="status_and_phone">statusul și telefon</string>
+
+    <!-- Rate Strings -->
+    <string name="rate_title">Rate %s</string>
+    <string name="rate_message">If you enjoy using %s, would you mind taking a moment to rate it? Thanks for your support!</string>
+    <string name="rate">Yes, Rate %s</string>
+    <string name="rate_later">Amintește-mi mai târziu</string>
+    <string name="rate_cancel">Nu, mulțumesc</string>
+    <string name="rate_helper_google_play_url">https://play.google.com/store/apps/details?id=%s</string>
+    <string name="update">Da, Actualizați %s</string>
+    <string name="update_title">Actualizați %s</string>
+    <string name="update_app_message">Bună acolo, această versiune din </string>
+    <string name="update_message_complete">" Vă rugăm să mergeți la Google Play Store pentru a descărca cea mai recentă versiune."</string>
+    <!--calls strings-->
+    <string name="incoming_call">APEL PRIMIT</string>
+    <string name="clear_log_call">Ștergeți jurnalul de apeluri</string>
+    <string name="voice_call">Efectuarea unui apel vocal</string>
+    <string name="video_call">Efectuarea unui apel video</string>
+    <string name="call_history">Istoricul</string>
+    <string name="title_calls">Informații apel</string>
+    <string name="remove_from_log">Eliminați din jurnalul de apeluri</string>
+    <string name="block_user">Blocați</string>
+    <string name="delete_call_dialog">Ștergerea …</string>
+    <string name="call_select_voice">Efectuarea unui apel vocal    </string>
+    <string name="call_select_video">Efectuarea unui apel video   </string>
+    <string name="you_couldnt_call_this_user_network">Nu s-a putut apela. Asigurați-acru conexiunea telefonul dvs. are conectare la internet și încercați din nou</string>
+    <string name="duration">Durata</string>
+    <string name="about_title">Despre noi</string>
+    <string name="default_wallpaper">Default</string>
+    <string name="wallpaper_gallery">Galeria</string>
+    <string name="wallpaper_is_set">Wallpaper Set</string>
+    <string name="you_can_copy_more_then_one">Nu puteți copia mai mult de un articol</string>
+    <string name="documents">Documente</string>
+    <string name="links">Links</string>
+    <string name="this_a_pdf_file_document">Acesta este un document PDF</string>
+    <string name="title_activity_privacy"><![CDATA[Confidențialitate și termeni]]></string>
+    <string name="english">Engleză</string>
+    <string name="german">Germana</string>
+    <string name="italian">Italian</string>
+    <string name="srbski">Sârbă</string>
+    <string name="bosnisch">Bosniac</string>
+    <string name="romaneste">Romaneste</string>
+    <string name="french">Franceză</string>
+    <string name="turski">Turcă</string>
+    <string name="tschechisch">Cehă</string>
+    <string name="grichisch">Greacă</string>
+    <string name="spanisch">Spaniolă</string>
+    <string name="kroatisch">Croat</string>
+    <string name="indonesisch">Indoneziană</string>
+    <string name="mazedonisch">Macedoneană</string>
+    <string name="rusisch">Rusă</string>
+    <string name="slovenisch">Slovenă</string>
+    <string name="title_language">Limbi</string>
+    <!--new strings-->
+
+    <string name="you_need_to_restart_the_application">Trebuie să reporniți aplicația</string>
+
+    <string name="selected">selectat</string>
+    <string name="current_language">curent</string>
+
+    <string name="block_user_make_sure">Vei folosi acest bloc, așa că va fi nici o urmărire ble pentru a suna sau a trimite mesajele pe care le .Sunteti sigur?</string>
+    <string name="unblock_user_make_sure">Vei debloca acest utilizator, deci va fi de încredere pentru a suna sau a trimite mesajele pe care le .Sunteti sigur?</string>
+    <string name="unblock_user">Deblocați</string>
+    <string name="title_blocked_contacts">Contacte blocate</string>
+    <string name="missed_video_call">Apel video pierdut</string>
+    <string name="missed_voice_call">Pierdute apel vocal</string>
+    <string name="outgoing_video_call">Apel video outgoing</string>
+    <string name="outgoing_voice_call">Apel vocal outgoing</string>
+
+    <string name="invitation_from">invitație din</string>
+    <string name="your_session_expired">Sesiunea dvs. este expirată</string>
+    <!--new strings-->
+    <string name="click_on">Click on </string>
+    <string name="to_choose_your_country_n_and_enter_your_phone_number"> to choose your country   and enter your phone number</string>
+    <string name="username">Username</string>
+    <string name="complete_registration_optional">This is an optional step you can skip it without edit anything</string>
+    <string name="complete_registration">Complete Registration</string>
+    <string name="dialog_loading">Loading…</string>
+    <string name="get_started">Get started</string>
+    <string name="number_not_match">This number not match the first one you insert to verify .please try again</string>
+
+    <string name="you_can_select_your_favorite_language_from_here">You can select your favorite language from here</string>
+    <string name="signup_terms">By Proceeding you also agree to application’s Terms of Service and
+		Privacy Policy.
+	</string>
+    <string name="new_messages_notify">new messages</string>
+    <string name="messages_from_notify">messages from</string>
+    <string name="chats_notify">chats</string>
+    <string name="phone">Phone</string>
+    <string name="exit_group_prof">Exit group</string>
+    <string name="delete_group">Delete group</string>
+    <string name="participants_prof">Members</string>
+
+    <string name="chats_title_tab" >Chats</string>
+    <string name="connecting">Connecting ...</string>
+    <string name="unable_to_record_audio">Unable to record audio</string>
+    <string name="Attach_cant_open_media_selection">Can\\\'t find an app to select media.</string>
+    <string name="send_location">Send Location</string>
+    <string name="MyLocation">My location</string>
+    <string name="Map">Map</string>
+    <string name="Satellite">Satellite</string>
+    <string name="Hybrid">Hybrid</string>
+    <string name="MetersAway">m away</string>
+    <string name="KMetersAway">km away</string>
+    <string name="ChatLocation">Location</string>
+    <string name="ShareLocation">Share location</string>
+    <string name="GiphyFragmentPagerAdapter_gifs">GIFs</string>
+    <string name="GiphyFragmentPagerAdapter_stickers">Stickers</string>
+    <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Error while retrieving full resolution GIF</string>
+    <string name="giphy_activity_toolbar__search_gifs_and_stickers">Search GIFs and stickers</string>
+    <string name="date_format_today">TODAY</string>
+    <string name="call_swipe_to_answer">Swipe up to answer</string>
+    <string name="call_swipe_to_reject">Swipe down to reject</string>
+    <string name="app_needs_access_to_your_contacts_and_media_in_order_to_connect_with_friends">application needs access to your contacts and media in order to connect with friends, exchange messages, and make  calls</string>
+    <string name="app__requires_contacts_permission_in_order_to_attach_contact_information">Application requires Contacts permission in order to attach contact information, but it has been permanently denied. Please continue to the app settings menu, select \\\"Permissions\\\", and enable \\\"Contacts\\\".</string>
+    <string name="contact_permission_required">The contact permission is required to use this application</string>
+    <string name="all_permission_required">Those permissions are required</string>
+    <string name="app__requires_storage_permission_in_order_to_attach_media_information">Application requires the Storage permission in order to attach photos, , but it has been permanently denied. Please continue to the app settings menu, select \"Permissions\", and enable \"Storage\".</string>
+    <string name="conversation_row_image">Image</string>
+    <string name="conversation_row_location">Location</string>
+    <string name="conversation_row_gif">Gif</string>
+    <string name="conversation_row_video">Video</string>
+    <string name="conversation_row_audio">Audio</string>
+    <string name="conversation_row_document">Document</string>
+    <string name="calls_title_tab">Calls</string>
+    <string name="gifs_directory">Gifs</string>
+    <string name="to_capture_photos_and_video_allow_appp_access_to_the_camera">To capture photos and video, allow Isco access to the camera.</string>
+    <string name="appp_needs_the_camera_permission_to_take_photos_or_video">Application needs the Camera permission to take photos or video, but it has been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Camera\".</string>
+    <string name="appp_needs_camera_permissions_to_take_photos_or_video">Application needs Camera permissions to take photos or video</string>
+    <string name="Permissions_continue">Continue</string>
+    <string name="Permissions_not_now">Not now</string>
+    <string name="Permissions_permission_required">Permissions Required</string>
+    <!-- attachment_type_selector -->
+    <string name="attachment_type_selector__audio">Audio</string>
+    <string name="attachment_type_selector__audio_description">Audio</string>
+    <string name="attachment_type_selector__contact">Contact</string>
+    <string name="attachment_type_selector__contact_description">Contact</string>
+    <string name="attachment_type_selector__camera">Camera</string>
+    <string name="attachment_type_selector__camera_description">Camera</string>
+    <string name="attachment_type_selector__location">Location</string>
+    <string name="attachment_type_selector__location_description">Location</string>
+    <string name="attachment_type_selector__gif">GIF</string>
+    <string name="attachment_type_selector__gif_description">Gif</string>
+    <string name="attachment_type_selector__gallery_description">Image or video</string>
+    <string name="attachment_type_selector__file_description">File</string>
+    <string name="attachment_type_selector__gallery">Gallery</string>
+    <string name="attachment_type_selector__file">Document</string>
+    <string name="to_call_s_app_needs_access_to_your_microphone_and_camera">To call %s, Application needs access to your microphone and camera.</string>
+    <string name="app_needs_the_microphone_and_camera_permissions_in_order_to_call_s">Application needs the Microphone and Camera permissions in order to call %s, but they have been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Microphone\" and \"Camera\".</string>
+    <string name="to_answer_the_call_from_s_give_app_access_to_your_microphone">To answer the call from %s, give Application access to your microphone.</string>
+    <string name="app_requires_microphone_and_camera_permissions_in_order_to_make_or_receive_calls">Application requires Microphone and Camera permissions in order to make or receive calls, but they have been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Microphone\" and \"Camera\".</string>
+
+    <string name="he_edited_this_group">edited  the  group name</string>
+    <string name="he_make_member_this_group">make a user as member</string>
+    <string name="he_make_admin_this_group">make a user as admin</string>
+    <string name="he_added_this_group">added new member</string>
+    <string name="he_removed_this_group">removed a member</string>
+    <string name="you_edited_this_group">You edit this group name</string>
+    <string name="you_make_member_this_group">You make a user as member</string>
+    <string name="you_make_admin_this_group">You make a user as member</string>
+    <string name="you_added_this_group">You\'ve added new member</string>
+    <string name="you_removed_this_group">You\'ve removed a member</string>
+    <string name="unknown">Unknown</string>
+    <string name="title_activity_add_new_members_to_group">Add new members</string>
+    <string name="new_missed_call">You have a new missed call</string>
+    <string name="audio_call_notify">Audio Call</string>
+    <string name="video_call_notify">Video Call</string>
+    <string name="you_couldnt_call_this_user">Couldn\'t place call. This User is not available now please try later</string>
+    <string name="you_couldnt_call">Couldn\'t place call</string>
+    <string name="story_title_tab">Status</string>
+    <string name="just_now">Just Now</string>
+    <string name="my_story">My status</string>
+    <string name="reply">Reply</string>
+    <string name="type_here_to_create_your_story">Type here to create your story..!</string>
+    <string name="file_limit_size_upload_format">Files must be less than %sMB</string>
+    <string name="nothing_to_undo">There is nothing to undo</string>
+    <string name="retry">RETRY</string>
+    <string name="this_type_of_file_not_supported">This type of file is not supported</string>
+    <string name="plus_99">+99</string>
+    <string name="selected_items">%s selected</string>
+    <string name="this_message_unsent">This message is not already sent</string>
+    <string name="who_can_see_your_stories_updates">Who can see your stories updates</string>
+    <string name="changes_to_your_privacy_settings_won_t_affect_stories_updates_that_you_ve_sent_already">Changes to your privacy settings won\'t affect stories updates that you\'ve sent already</string>
+    <string name="my_contacts">My contacts</string>
+    <string name="my_contacts_except">My contacts except...</string>
+    <string name="my_contacts_with">My contacts with</string>
+    <string name="title_stories_privacy">Stories privacy</string>
+    <string name="select_all">Select all</string>
+    <string name="title_hide_stories_from">Hide stories from...</string>
+    <string name="title_sub_hide_stories_from">No contacts excluded</string>
+    <string name="title_share_stories_with">Share stories with...</string>
+    <string name="title_sub_share_stories_with">No contacts selected</string>
+    <string name="excluded_items">%s excluded</string>
+    <string name="loading">Loading...</string>
+    <string name="edit_video">Edit Video</string>
+    <string name="gallery">Gallery</string>
+    <string name="see_more">See more</string>
+    <string name="your_story_updates_will_disappear_after_24_hours">Your story updates will disappear after 24 hours</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="sending_reply">Sending reply ...</string>
+    <string name="viewed_by">Viewed By</string>
+    <string name="no_one_view_the_story">No one view the story</string>
+    <string name="Page2Title">Fast</string>
+    <string name="Page3Title">Free</string>
+    <string name="Page4Title">Secure</string>
+    <string name="Page5Title">Powerful</string>
+    <string name="Page1Message">Welcome to the era of fast and secure messaging. Please swipe to discover the features and register</string>
+    <string name="Page2Message"><![CDATA[delivers messages faster than<![CDATA[<br/>]]>any other application]></string>
+    <string name="Page3Message"><![CDATA[is free .<![CDATA[<br/>]]>No subscription fees]></string>
+    <string name="Page4Message"><![CDATA[keeps your messages safe<![CDATA[<br/>]]>from hacker attacks]></string>
+    <string name="Page5Message"><![CDATA[has no limits on the size of<![CDATA[<br/>]]>your media and chats]></string>
+    <string name="initializing">Initializing ...</string>
+    <string name="no_application_to_view_word">No Application Available to View WORD</string>
+    <string name="no_application_to_view_ppt">No Application Available to View POWER POINT</string>
+    <string name="no_application_to_view_excel">No Application Available to View EXCEL</string>
+    <string name="username_required">Username is required</string>
+    <string name="Hello_get">Hello, get</string>
+    <string name="so_you_can_easly">so we can easily chat  with each other !</string>
+    <string name="hi_i_m_using_app">Hi there! i\'m using</string>
+    <string name="contact_media_permission_required"><![CDATA[Media & contacts permissions are required to run the app normally]]></string>
+    <string name="PhoneMobile">PhoneMobile</string>
+    <string name="PhoneHome">PhoneHome</string>
+    <string name="my_stories">My stories</string>
+    <string name="sending_file_to">Sending File to</string>
+    <string name="you_ve_reached_the_limit">You can not add more then %d</string>
+    <string name="contacts_title_tab">Contacts</string>
+    <string name="you_cant_delete_dflt_status">You can\'t delete the default status</string>
+    <string name="last_seen">Last Seen</string>
+</resources>

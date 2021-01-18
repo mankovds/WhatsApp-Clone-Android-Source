@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/call_video"
+        android:icon="@drawable/ic_videocam_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/video_call"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/call_voice"
+        android:icon="@drawable/ic_phone_white_msg_24dp"
+        android:orderInCategory="100"
+        android:title="@string/voice_call"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/search_messages"
+        android:icon="@drawable/ic_search_24dp"
+        android:orderInCategory="100"
+        android:title="@string/search"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/view_contact"
+        android:orderInCategory="100"
+        android:title="@string/view_contact"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/clear_chat"
+        android:orderInCategory="100"
+        android:title="@string/clear_chat"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/add_contact"
+        android:orderInCategory="100"
+        android:title="@string/add_contact"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/unblock_user"
+        android:orderInCategory="100"
+        android:title="@string/unblock_user"
+        app:showAsAction="never" />
+</menu>

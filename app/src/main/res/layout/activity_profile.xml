@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/anim_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="0dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="270dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_empty"
+                    android:transitionName="userAvatar" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:background="@drawable/bg_diagonal_profile" />
+
+
+                <LinearLayout
+                    android:id="@+id/group_container_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="end"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+
+                    <com.vanniktech.emoji.EmojiTextView
+                        android:id="@+id/created_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left|center"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:padding="6dp"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/group_edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="66dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        app:tint="@color/colorWhite"
+                        android:clickable="true"
+                        android:visibility="gone"
+                        app:backgroundTint="@color/colorAccent"
+                        app:fabSize="normal"
+                        app:srcCompat="@drawable/ic_mode_edit_white_24dp" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/shareBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="66dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp"
+                        android:clickable="true"
+                        app:tint="@color/colorWhite"
+                        android:visibility="gone"
+                        app:backgroundTint="@color/colorAccent"
+                        app:fabSize="normal"
+                        app:srcCompat="@drawable/ic_share_white_24dp" />
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <include layout="@layout/profile_content" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

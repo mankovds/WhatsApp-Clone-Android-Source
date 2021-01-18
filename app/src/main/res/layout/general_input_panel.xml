@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.strolink.whatsUp.ui.views.InputGeneralPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/inputs_background"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:orientation="horizontal"
+        android:clipToPadding="false">
+
+
+        <com.vanniktech.emoji.EmojiEditText
+            android:id="@+id/embedded_text_editor"
+            style="@style/ComposeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:textSize="12sp"
+            android:padding="6dp"
+            tools:hint="@string/write_something"
+            tools:visibility="invisible">
+
+        </com.vanniktech.emoji.EmojiEditText>
+
+        <com.strolink.whatsUp.ui.views.EmojiToggleButton
+            android:id="@+id/emoji_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="16dp"
+            android:background="@drawable/bg_item_round_ripple"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+</com.strolink.whatsUp.ui.views.InputGeneralPanel>

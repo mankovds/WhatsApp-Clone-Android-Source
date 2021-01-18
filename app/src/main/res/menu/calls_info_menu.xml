@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/new_message"
+        android:icon="@drawable/ic_chat_bubble_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/new_message"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/remove_from_log"
+        android:orderInCategory="100"
+        android:title="@string/remove_from_log"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/block_user"
+        android:orderInCategory="100"
+        android:title="@string/block_user"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_rect_ripple"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="6dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/image_profile_width"
+            android:layout_height="@dimen/image_profile_height"
+            android:layout_margin="@dimen/image_profile_margin"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/icon_made"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_call_made_green_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/icon_received"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_call_received_red_24dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/date_call"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:gravity="start|center"
+                    android:textColor="@color/colorMessageText"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/counter_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="@color/colorMessageText"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/CallVideoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:padding="6dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_videocam_green_24dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/CallBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:padding="6dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_call_24dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/view_margin_left"
+        android:layout_marginRight="@dimen/view_margin_right"
+        android:background="@color/colorGray" />
+</LinearLayout>

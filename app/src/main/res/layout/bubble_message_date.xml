@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.strolink.whatsUp.ui.FlexLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end|bottom"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:gravity="end"
+    app:viewPartMain="@+id/message_text"
+    app:viewPartSlave="@+id/status_date_container">
+
+    <com.vanniktech.emoji.EmojiTextView
+        android:id="@+id/message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:autoLink="all"
+        android:gravity="start|bottom"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp" />
+
+
+    <LinearLayout
+        android:id="@+id/status_date_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:minWidth="40dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/date_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="@color/colorLeftBubbleDate"
+            android:textSize="12sp" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/status_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+    </LinearLayout>
+</com.strolink.whatsUp.ui.FlexLayout>

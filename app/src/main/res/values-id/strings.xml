@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Date format -->
+    <string name="date_format_yesterday">Kemarin</string>
+
+    <string name="number">Nomor telepon</string>
+    <string name="NoMessages">Belum ada pembicaraan, Anda bisa memulainya sekarang</string>
+    <string name="NoCalls">Tidak ada panggilan</string>
+    <string name="NoContacts">Tidak ada kontak. Silahkan coba lagi nanti atau tambahkan yang baru</string>
+    <string name="NoResult">Tidak ada</string>
+    <string name="error_response_contacts">Tidak dapat memperbarui kontak Anda.</string>
+    <string name="name_is_too_short">Namanya terlalu pendek</string>
+    <string name="select_picture">Pilih gambar</string>
+    <string name="new_group">Grup baru</string>
+    <string name="status">Status Anda saat ini</string>
+    <string name="settings">Setelan</string>
+    <string name="refresh_contacts">Perbarui</string>
+    <string name="search">Cari</string>
+    <string name="add_contact">Tambahkan kontak</string>
+    <string name="new_message">Pesan baru</string>
+    <string name="title_activity_add_members_to_group">Grup baru</string>
+    <string name="title_activity_settings">Setelan</string>
+    <string name="title_activity_edit_profile">Info profil</string>
+    <string name="edit">Edit</string>
+    <string name="view_in_ad_book">Lihat di buku alamat</string>
+    <string name="next">Lanjut</string>
+    <string name="set_back_and_keep_calm_you_will_receive_an_sms_of_verification">Mengatur kembali dan tetap tenang Anda akan menerima pada sms verifikasi</string>
+    <string name="resend">Anda tidak menerima kode apapun? mengirim ulang</string>
+    <string name="enter_the_code_below_to_verify">Masukkan kode di bawah ini untuk memverifikasi</string>
+    <string name="enter_your_code">-- -- -- -- -- --</string>
+    <string name="ok">OK</string>
+    <string name="please_enter_your_ver_code">Konfirmasikan kode sandi Anda:</string>
+    <string name="enter_a_val_number">Masukkan nomor telepon Anda.</string>
+    <string name="invite">Undang</string>
+    <string name="your_current_status">Status saya</string>
+    <string name="select_your_new_status">Perubahan status baru</string>
+    <string name="title_activity_status">Status saya</string>
+    <string name="Yes">Ya</string>
+    <string name="No">Tidak</string>
+    <string name="delete">Hapus</string>
+    <string name="delete_status">Hapus status</string>
+    <string name="cancel">Batal</string>
+    <string name="Ok">OK</string>
+    <string name="write_something">Ketik pesan</string>
+    <string name="title_activity_edit_status">Edit status</string>
+    <string name="deleteALL">Hapus semua</string>
+    <string name="oops_something">Oops something went wrong </string>
+    <string name="oops_something_crashed">Oops !! something went wrong . Please send a report to the developer</string>
+    <string name="no_status">*** tidak ada status ***</string>
+    <string name="no_username"> Tidak username </string>
+    <string name="edit_status_activity_title">Tambah status baru</string>
+    <string name="title_activity_edit_name">Enter your name</string>
+    <string name="title_select_contacts">Kontak saya</string>
+    <string name="success_response_contacts">Kontak telah diperbarui.</string>
+
+    <string name="exit">Keluar</string>
+    <string name="shareContact">Share contact</string>
+
+    <!--actions user -->
+    <string name="isTyping">mengetik...</string>
+    <string name="isOffline">Offline</string>
+    <string name="isOnline">online</string>
+
+
+    <!--end date format-->
+    <string name="search_">Cari …</string>
+    <string name="add_new_member">Tambah</string>
+    <string name="type_group_subject_here">Masukkan subjek baru</string>
+    <string name="provide_group_subject_and_optional_group_icon">Berikan subjek grup dan ikon grup (opsional)</string>
+    <string name="title_activity_edit_group_name">Masukkan subjek baru</string>
+    <string name="attach_camera">Kamera</string>
+    <string name="attach_gallery">Galeri</string>
+    <string name="media">Media</string>
+    <string name="clear_chat">Bersihkan chat</string>
+    <string name="view_contact">View Contact</string>
+    <string name="group_info">Info grup</string>
+    <string name="search_hint">Cari</string>
+    <string name="alert_message_delete_conversation">Anda yakin ingin membersihkan pesan-pesan di chat ini?</string>
+    <string name="hold_to_record">Rekam pesan suara</string>
+
+    <!-- Permissions strings start -->
+    <string name="record_audio_permission_message">Record audio permission allows you to  record audios. Please allow in App Settings for additional functionality.</string>
+    <string name="location_permission_message">get Location permission allows you access to your contacts. Please allow in App Settings for additional functionality.</string>
+    <string name="write_storage_permission_message">Write External permission allows us  access to your media. Please allow in App Settings for additional functionality.</string>
+    <string name="write_contacts_permission_message">Write Contacts permission allows you access to your contacts. Please allow in App Settings for additional functionality.</string>
+
+    <!--Permissions strings end -->
+
+    <string name="deleting_chat">"Hapus chat"</string>
+    <string name="copy_message">Salin</string>
+    <string name="transfer_message">Meneruskan ke...</string>
+    <string name="message_delete">Hapus pesan?</string>
+    <string name="message_copy">Text message</string>
+
+    <!--settings strings-->
+    <string name="notifications">Notifikasi pesan</string>
+    <string name="chats">Chatting</string>
+    <string name="account">Akun</string>
+    <string name="delete_my_account">Hapus akun saya</string>
+    <string name="chat_settings">Setelan chat</string>
+    <string name="enter_key_off">Tombol Enter akan menambahkan baris baru</string>
+    <string name="enter_key_on">Tombol Enter akan mengirim pesan Anda</string>
+    <string name="enter_key">Enter untuk mengirim</string>
+    <string name="message_font_size">Ukuran font</string>
+    <string name="message_font_size_summary">Ukuran font di layar chat</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="conversation_tones_off">Putar suara untuk pesan masuk dan keluar.</string>
+    <string name="message_notifications_settings">Message bildirimleri</string>
+    <string name="notifications_settings_tone">Nada notifikasi</string>
+    <string name="default_settings">Default</string>
+    <string name="message_notifications_settings_vibrate">Getar</string>
+    <string name="message_notifications_settings_light">Lampu</string>
+    <string name="call_notifications_settings_vibrate">Getar</string>
+    <string name="conversation_tones">Nada notifikasi</string>
+    <string name="message_group_notifications_settings">Notifikasi grup</string>
+    <string name="title_activity_delete_account">Hapus akun</string>
+    <string name="title_activity_change_number">Ganti nomor</string>
+    <string name="title_activity_account_settings">Akun</string>
+    <string name="call_notifications_settings">Notifikasi panggilan</string>
+    <string name="call_ringtone">Nada dering</string>
+    <string name="message_notifications_settings_tone_silent">Senyap</string>
+    <string name="call_notifications_settings_tone_silent">Senyap</string>
+    <string name="select_one_at_least">"At least you must select one "</string>
+    <string name="participants">Peserta:</string>
+    <string name="create_group_failed">Tidak dapat membuat. Ketuk untuk mencoba lagi.</string>
+    <string name="slide_to_cancel_audio">geser untuk tolak</string>
+    <string name="message_is_copied">Pesan disalin</string>
+    <string name="of">" of "</string>
+    <string name="failed_upload_image">"Tidak dapat memuat foto ini. Silakan coba lagi."</string>
+
+    <!--group adapters start -->
+    <string name="exit_group">Keluar \"</string>
+    <string name="group_ex">\" grup?</string>
+    <string name="exiting_group_dialog">" Keluar dari grup… "</string>
+    <string name="deleting_group_dialog">"Menghapus..."</string>
+    <string name="created_by_you_at">Anda membuat grup</string>
+    <string name="created_by">"dibuat oleh "</string>
+    <string name="group_at">at</string>
+    <string name="failed_to_delete_this_group_check_connection">Tidak dapat mengakhiri grup ini. Silakan coba lagi.</string>
+    <string name="failed_to_exit_this_group_check_connection">Tidak dapat keluar dari grup. SIlakan coba lagi.</string>
+    <string name="adding_new_status">Perubahan status baru</string>
+    <string name="add_to_group">"Tambahkan "</string>
+    <string name="member_to_group">" anggota kelompok"</string>
+    <string name="adding_member">" anggota menambahkan… "</string>
+    <string name="you">Anda</string>
+    <!--group member options start -->
+    <string name="message_group_option">"Pesan"</string>
+    <string name="view_group_option">"Lihat "</string>
+    <string name="make_admin_group_option"> an admin</string>
+    <string name="make_member_group_option"> member</string>
+    <string name="make_group_option"> Make </string>
+    <string name="remove_group_option">"Hapus "</string>
+    <!--group member options end -->
+    <string name="remove_from_group">"Hapus "</string>
+    <string name="from_group">" dari grup"</string>
+    <string name="failed_to_make_member_as_admin">Anda tidak dapat mengganti admin karena Anda bukan seorang admin.</string>
+    <string name="failed_to_remove_member">Tidak dapat mengeluarkan peserta. Silakan coba lagi.</string>
+    <!--group adapters end -->
+    <!--conversations and messages  adapters start-->
+    <string name="you_created_this_group">Anda membuat grup ini</string>
+    <string name="he_created_this_group">" membuat grup ini"</string>
+    <string name="you_left">You left</string>
+    <string name="he_left">" left"</string>
+    <string name="no_application_to_view_pdf">Tidak ada aplikasi yang tersedia untuk Lihat PDF</string>
+    <!--conversations and messages adapters start-->
+    <string name="transfer_message_to">"Pesan Transfer atau Berbagi konten ke "</string>
+    <string name="no_app_to_play_audio">"Tidak ada aplikasi yang tersedia untuk memutar audio "</string>
+    <string name="delete_all_status_dialog">Hapus semua chat</string>
+    <string name="deleting">Menghapus...</string>
+    <string name="updating_status">Memposting perubahan status...</string>
+    <string name="your_status_updated_successfully">Pembaruan status dihapus</string>
+
+
+    <string name="reply_message">Jawab</string>
+
+
+    <string name="message_notifications_settings_vibrate_off">Getar Off</string>
+    <string name="message_notifications_settings_vibrate_on">Getar On</string>
+    <string name="call_notifications_settings_vibrate_off">Getar Off</string>
+    <string name="call_notifications_settings_vibrate_on">Getar On</string>
+    <string name="enjoy_it">Bersenang senang lah</string>
+    <string name="app_version">"Versi "</string>
+    <string name="alert_message_delete_account">Lanjutkan penghapusan akun? Akun yang terhapus tidak dapat dikembalikan! Jika suatu saat Anda mendaftar ulang dengan HELLO, data Anda tidak dapat dikembalikan.</string>
+    <string name="unexpected_reponse_from_server">Respons tak terduga dari server</string>
+    <string name="you_send_messages"> Anda bukan lagi peserta.</string>
+    <string name="failed_exit_group">Gagal untuk keluar. Ketuk untuk mencoba lagi.</string>
+    <string name="this_video_is_not_exist">Video ini tidak tersedia karena terdapat masalah dengan file video.</string>
+    <string name="this_image_is_not_exist">Tidak dapat memuat foto ini. Silakan coba lagi.</string>
+    <string name="this_audio_is_not_exist">Audio ini tidak tersedia karena terdapat masalah dengan file audio.</string>
+    <string name="this_document_is_not_exist">Dokumen tidak ditemukan</string>
+
+    <!--Directories strings-->
+
+    <string name="profile_photos">Foto Profil Kontak</string>
+    <string name="images_directory">Gambar</string>
+    <string name="data_cache_directory">Mencari cadangan</string>
+    <string name="videos_directory">Video</string>
+    <string name="audios_directory">Audio</string>
+    <string name="documents_directory">Dokumen</string>
+    <string name="directory_wallpaper">Wallpaper</string>
+    <string name="directory_sent">Diterima</string>
+    <string name="video_thumbnail">Thumbnail</string>
+    <string name="image_saved">Gambar tersimpan</string>
+    <string name="save_to_gallery">Tersimpan ke Galeri</string>
+    <string name="shareItem">Bagikan</string>
+    <string name="this_message_empty">Pesan ini kosong</string>
+    <string name="share_message">Bagikan</string>
+    <string name="you_can_share_more_then_one">Anda tidak dapat berbagi lebih dari satu item</string>
+    <!--others -->
+    <string name="add_to_you_contact">TAMBAHKAN ORANG INI KEPADA KONTAK ANDA </string>
+    <string name="status_and_phone">Status dan telepon</string>
+
+    <!-- Rate Strings -->
+    <string name="rate_title">Rate %s</string>
+    <string name="rate_message">Jika Anda senang menggunakan %s, apakah Anda keberatan meluangkan waktu untuk menilainya? Terima kasih atas dukunganmu!</string>
+    <string name="rate">Ya, Rate %s</string>
+    <string name="rate_later">Ingatkan aku nanti</string>
+    <string name="rate_cancel">Tidak, terima kasih</string>
+    <string name="rate_helper_google_play_url">https://play.google.com/store/apps/details?id=%s</string>
+    <string name="update">Ya, Perbarui %s</string>
+    <string name="update_title">Perbarui %s</string>
+    <string name="update_app_message">Versi baru HELLO telah tersedia. Apakah Anda ingin memasangnya sekarang? </string>
+    <string name="update_message_complete">"Versi HELLO ini sudah terlalu lama dan tidak lagi berfungsi. Silakan kunjungi Google Play Store untuk mengunduh versi terbaru."</string>
+    <!--calls strings-->
+    <string name="incoming_call">Panggilan suara masuk</string>
+    <string name="clear_log_call">Hapus log panggilan</string>
+    <string name="voice_call">Panggilan Suara</string>
+    <string name="video_call">Panggilan Video</string>
+    <string name="call_history">History</string>
+    <string name="title_calls">Info panggilan</string>
+    <string name="remove_from_log">Hapus dari riwayat panggilan</string>
+    <string name="block_user">Blokir</string>
+    <string name="delete_call_dialog">Hapus…</string>
+    <string name="call_select_voice">Panggilan Suara</string>
+    <string name="call_select_video">Panggilan Video</string>
+    <string name="you_couldnt_call_this_user_network">Periksa koneksi Internet telepon Anda dan coba lagi.</string>
+    <string name="duration">Lamanya</string>
+    <string name="about_title">Tentang</string>
+    <string name="default_wallpaper">Default</string>
+    <string name="wallpaper_gallery">Galeri</string>
+    <string name="wallpaper_is_set">Wallpaper terpasang</string>
+    <string name="you_can_copy_more_then_one">Anda tidak dapat menyalin lebih dari satu item</string>
+    <string name="documents">Dokumen</string>
+    <string name="links">Tautan</string>
+    <string name="this_a_pdf_file_document">PDF Dokumen</string>
+    <string name="title_activity_privacy"><![CDATA[Ketentuan dan Kebijakan Privasi]]></string>
+    <string name="english">Inggris</string>
+    <string name="german">Jerman</string>
+    <string name="italian">Italian</string>
+    <string name="srbski">Serbia</string>
+    <string name="bosnisch">Bosnia</string>
+    <string name="romaneste">Rumania</string>
+    <string name="french">Perancis</string>
+    <string name="turski">Turki</string>
+    <string name="tschechisch">Ceko</string>
+    <string name="grichisch">Yunani</string>
+    <string name="spanisch">Spanyol</string>
+    <string name="kroatisch">Kroasia</string>
+    <string name="indonesisch">Indonesia</string>
+    <string name="mazedonisch">Macedonian</string>
+    <string name="rusisch">Rusia</string>
+    <string name="slovenisch">Slovenia</string>
+    <string name="title_language">Bahasa Aplikasi</string>
+    <!--new strings-->
+
+    <string name="you_need_to_restart_the_application">Anda perlu me-restart aplikasi</string>
+
+    <string name="selected">Terpilih</string>
+    <string name="current_language">saat ini</string>
+
+    <string name="block_user_make_sure">Kontak terblokir tidak dapat lagi memanggil Anda atau mengirimi Anda pesan.</string>
+    <string name="unblock_user_make_sure">Anda akan membuka blokir pengguna ini, sehingga ia akan dapat menghubungi Anda atau mengirim pesan .are Anda yakin?</string>
+    <string name="unblock_user">Blokir</string>
+    <string name="title_blocked_contacts">Kontak terblokir</string>
+    <string name="missed_video_call">Panggilan video tak terjawab</string>
+    <string name="missed_voice_call">Panggilan suara tak terjawab</string>
+    <string name="outgoing_video_call">Panggilan video keluar</string>
+    <string name="outgoing_voice_call">Panggilan suara keluar</string>
+
+    <string name="invitation_from">undangan dari</string>
+    <string name="your_session_expired">Sesi Anda adalah Expired</string>
+    <!--new strings-->
+    <string name="click_on">Click on </string>
+    <string name="to_choose_your_country_n_and_enter_your_phone_number"> to choose your country   and enter your phone number</string>
+    <string name="username">Username</string>
+    <string name="complete_registration_optional">This is an optional step you can skip it without edit anything</string>
+    <string name="complete_registration">Complete Registration</string>
+    <string name="dialog_loading">Loading…</string>
+    <string name="get_started">Get started</string>
+    <string name="number_not_match">This number not match the first one you insert to verify .please try again</string>
+
+    <string name="you_can_select_your_favorite_language_from_here">You can select your favorite language from here</string>
+    <string name="signup_terms">By Proceeding you also agree to application’s Terms of Service and
+		Privacy Policy.
+	</string>
+    <string name="new_messages_notify">new messages</string>
+    <string name="messages_from_notify">messages from</string>
+    <string name="chats_notify">chats</string>
+    <string name="phone">Phone</string>
+    <string name="exit_group_prof">Exit group</string>
+    <string name="delete_group">Delete group</string>
+    <string name="participants_prof">Members</string>
+
+    <string name="chats_title_tab" >Chats</string>
+    <string name="connecting">Connecting ...</string>
+
+    <string name="unable_to_record_audio">Unable to record audio</string>
+    <string name="Attach_cant_open_media_selection">Can\\\'t find an app to select media.</string>
+    <string name="send_location">Send Location</string>
+    <string name="MyLocation">My location</string>
+    <string name="Map">Map</string>
+    <string name="Satellite">Satellite</string>
+    <string name="Hybrid">Hybrid</string>
+    <string name="MetersAway">m away</string>
+    <string name="KMetersAway">km away</string>
+    <string name="ChatLocation">Location</string>
+    <string name="ShareLocation">Share location</string>
+    <string name="GiphyFragmentPagerAdapter_gifs">GIFs</string>
+    <string name="GiphyFragmentPagerAdapter_stickers">Stickers</string>
+    <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Error while retrieving full resolution GIF</string>
+    <string name="giphy_activity_toolbar__search_gifs_and_stickers">Search GIFs and stickers</string>
+    <string name="date_format_today">TODAY</string>
+    <string name="call_swipe_to_answer">Swipe up to answer</string>
+    <string name="call_swipe_to_reject">Swipe down to reject</string>
+    <string name="app_needs_access_to_your_contacts_and_media_in_order_to_connect_with_friends">application needs access to your contacts and media in order to connect with friends, exchange messages, and make  calls</string>
+    <string name="app__requires_contacts_permission_in_order_to_attach_contact_information">Application requires Contacts permission in order to attach contact information, but it has been permanently denied. Please continue to the app settings menu, select \\\"Permissions\\\", and enable \\\"Contacts\\\".</string>
+    <string name="contact_permission_required">The contact permission is required to use this application</string>
+    <string name="all_permission_required">Those permissions are required</string>
+    <string name="app__requires_storage_permission_in_order_to_attach_media_information">Application requires the Storage permission in order to attach photos, , but it has been permanently denied. Please continue to the app settings menu, select \"Permissions\", and enable \"Storage\".</string>
+    <string name="conversation_row_image">Image</string>
+    <string name="conversation_row_location">Location</string>
+    <string name="conversation_row_gif">Gif</string>
+    <string name="conversation_row_video">Video</string>
+    <string name="conversation_row_audio">Audio</string>
+    <string name="conversation_row_document">Document</string>
+    <string name="calls_title_tab">Calls</string>
+    <string name="gifs_directory">Gifs</string>
+
+    <string name="to_capture_photos_and_video_allow_appp_access_to_the_camera">To capture photos and video, allow Isco access to the camera.</string>
+    <string name="appp_needs_the_camera_permission_to_take_photos_or_video">Application needs the Camera permission to take photos or video, but it has been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Camera\".</string>
+    <string name="appp_needs_camera_permissions_to_take_photos_or_video">Application needs Camera permissions to take photos or video</string>
+    <string name="Permissions_continue">Continue</string>
+    <string name="Permissions_not_now">Not now</string>
+    <string name="Permissions_permission_required">Permissions Required</string>
+    <!-- attachment_type_selector -->
+    <string name="attachment_type_selector__audio">Audio</string>
+    <string name="attachment_type_selector__audio_description">Audio</string>
+    <string name="attachment_type_selector__contact">Contact</string>
+    <string name="attachment_type_selector__contact_description">Contact</string>
+    <string name="attachment_type_selector__camera">Camera</string>
+    <string name="attachment_type_selector__camera_description">Camera</string>
+    <string name="attachment_type_selector__location">Location</string>
+    <string name="attachment_type_selector__location_description">Location</string>
+    <string name="attachment_type_selector__gif">GIF</string>
+    <string name="attachment_type_selector__gif_description">Gif</string>
+    <string name="attachment_type_selector__gallery_description">Image or video</string>
+    <string name="attachment_type_selector__file_description">File</string>
+    <string name="attachment_type_selector__gallery">Gallery</string>
+    <string name="attachment_type_selector__file">Document</string>
+    <string name="to_call_s_app_needs_access_to_your_microphone_and_camera">To call %s, Application needs access to your microphone and camera.</string>
+    <string name="app_needs_the_microphone_and_camera_permissions_in_order_to_call_s">Application needs the Microphone and Camera permissions in order to call %s, but they have been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Microphone\" and \"Camera\".</string>
+    <string name="to_answer_the_call_from_s_give_app_access_to_your_microphone">To answer the call from %s, give Application access to your microphone.</string>
+    <string name="app_requires_microphone_and_camera_permissions_in_order_to_make_or_receive_calls">Application requires Microphone and Camera permissions in order to make or receive calls, but they have been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Microphone\" and \"Camera\".</string>
+
+    <string name="he_edited_this_group">edited  the  group name</string>
+    <string name="he_make_member_this_group">make a user as member</string>
+    <string name="he_make_admin_this_group">make a user as admin</string>
+    <string name="he_added_this_group">added new member</string>
+    <string name="he_removed_this_group">removed a member</string>
+    <string name="you_edited_this_group">You edit this group name</string>
+    <string name="you_make_member_this_group">You make a user as member</string>
+    <string name="you_make_admin_this_group">You make a user as member</string>
+    <string name="you_added_this_group">You\'ve added new member</string>
+    <string name="you_removed_this_group">You\'ve removed a member</string>
+    <string name="title_activity_add_new_members_to_group">Add new members</string>
+    <string name="new_missed_call">You have a new missed call</string>
+    <string name="audio_call_notify">Audio Call</string>
+    <string name="video_call_notify">Video Call</string>
+    <string name="you_couldnt_call_this_user">Couldn\'t place call. This User is not available now please try later</string>
+    <string name="you_couldnt_call">Couldn\'t place call</string>
+    <string name="story_title_tab">Status</string>
+    <string name="just_now">Just Now</string>
+    <string name="my_story">My status</string>
+    <string name="reply">Reply</string>
+    <string name="type_here_to_create_your_story">Type here to create your story..!</string>
+    <string name="file_limit_size_upload_format">Files must be less than %sMB</string>
+    <string name="nothing_to_undo">There is nothing to undo</string>
+    <string name="retry">RETRY</string>
+    <string name="this_type_of_file_not_supported">This type of file is not supported</string>
+    <string name="plus_99">+99</string>
+    <string name="selected_items">%s selected</string>
+    <string name="this_message_unsent">This message is not already sent</string>
+    <string name="who_can_see_your_stories_updates">Who can see your stories updates</string>
+    <string name="changes_to_your_privacy_settings_won_t_affect_stories_updates_that_you_ve_sent_already">Changes to your privacy settings won\'t affect stories updates that you\'ve sent already</string>
+    <string name="my_contacts">My contacts</string>
+    <string name="my_contacts_except">My contacts except...</string>
+    <string name="my_contacts_with">My contacts with</string>
+    <string name="title_stories_privacy">Stories privacy</string>
+    <string name="select_all">Select all</string>
+    <string name="title_hide_stories_from">Hide stories from...</string>
+    <string name="title_sub_hide_stories_from">No contacts excluded</string>
+    <string name="title_share_stories_with">Share stories with...</string>
+    <string name="title_sub_share_stories_with">No contacts selected</string>
+    <string name="excluded_items">%s excluded</string>
+    <string name="loading">Loading...</string>
+    <string name="edit_video">Edit Video</string>
+    <string name="gallery">Gallery</string>
+    <string name="see_more">See more</string>
+    <string name="your_story_updates_will_disappear_after_24_hours">Your story updates will disappear after 24 hours</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="sending_reply">Sending reply ...</string>
+    <string name="viewed_by">Viewed By</string>
+    <string name="no_one_view_the_story">No one view the story</string>
+    <string name="Page2Title">Fast</string>
+    <string name="Page3Title">Free</string>
+    <string name="Page4Title">Secure</string>
+    <string name="Page5Title">Powerful</string>
+    <string name="Page1Message">Welcome to the era of fast and secure messaging. Please swipe to discover the features and register</string>
+    <string name="Page2Message"><![CDATA[delivers messages faster than<![CDATA[<br/>]]>any other application]></string>
+    <string name="Page3Message"><![CDATA[is free .<![CDATA[<br/>]]>No subscription fees]></string>
+    <string name="Page4Message"><![CDATA[keeps your messages safe<![CDATA[<br/>]]>from hacker attacks]></string>
+    <string name="Page5Message"><![CDATA[has no limits on the size of<![CDATA[<br/>]]>your media and chats]></string>
+    <string name="initializing">Initializing ...</string>
+    <string name="no_application_to_view_word">No Application Available to View WORD</string>
+    <string name="no_application_to_view_ppt">No Application Available to View POWER POINT</string>
+    <string name="no_application_to_view_excel">No Application Available to View EXCEL</string>
+    <string name="username_required">Username is required</string>
+    <string name="Hello_get">Hello, get</string>
+    <string name="so_you_can_easly">so we can easily chat  with each other !</string>
+    <string name="hi_i_m_using_app">Hi there! i\'m using</string>
+    <string name="contact_media_permission_required"><![CDATA[Media & contacts permissions are required to run the app normally]]></string>
+    <string name="PhoneMobile">PhoneMobile</string>
+    <string name="PhoneHome">PhoneHome</string>
+    <string name="my_stories">My stories</string>
+    <string name="sending_file_to">Sending File to</string>
+    <string name="you_ve_reached_the_limit">You can not add more then %d</string>
+    <string name="contacts_title_tab">Contacts</string>
+    <string name="you_cant_delete_dflt_status">You can\'t delete the default status</string>
+    <string name="last_seen">Last Seen</string>
+
+</resources>

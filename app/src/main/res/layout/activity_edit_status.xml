@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <include layout="@layout/shadow_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include layout="@layout/general_input_panel" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/inputs_background"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputs_background"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="45dp"
+                    android:background="@color/colorGray"
+                    android:padding="6dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_gravity="top"
+                        android:background="@color/colorGray" />
+
+                    <TextView
+                        android:id="@+id/cancelStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:text="@string/cancel"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/colorGray" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="45dp"
+                    android:background="@color/colorGray"
+                    android:padding="6dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_gravity="top"
+                        android:background="@color/colorGray" />
+
+                    <TextView
+                        android:id="@+id/OkStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:text="@string/Ok"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/colorGray" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="45dp"
+                    android:background="@color/colorGray"
+                    android:padding="6dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

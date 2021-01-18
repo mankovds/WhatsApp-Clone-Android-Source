@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.strolink.whatsUp.ui.dragView.DragToClose xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:drag="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drag_to_close"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlackOpacity"
+    drag:closeOnClick="true"
+    drag:draggableContainer="@+id/card"
+    drag:draggableView="@+id/seen_list_container">
+
+    <LinearLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/seen_list_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:background="@drawable/inputs_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:subtitleTextAppearance="@style/ToolbarSubTitle">
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <View
+                android:id="@+id/shadow_view"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@drawable/below_shadow_rect" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/no_one_view_the_story"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/seenList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    tools:listitem="@layout/row_seen_list" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.strolink.whatsUp.ui.dragView.DragToClose>

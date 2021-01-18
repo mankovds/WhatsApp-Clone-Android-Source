@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.strolink.whatsUp.ui.dragView.DragToClose xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:drag="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drag_to_close"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlackOpacity"
+    drag:closeOnClick="true"
+    drag:draggableContainer="@+id/reply_story"
+    drag:draggableView="@+id/drag">
+
+
+    <LinearLayout
+        android:id="@+id/reply_story"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/drag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/inputs_background"
+            android:orientation="vertical">
+
+
+            <include
+                android:id="@+id/replied_message_view"
+                layout="@layout/replied_message_view_input"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.strolink.whatsUp.ui.views.InputGeneralPanel
+                    android:id="@+id/bottom_panel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal">
+
+
+                        <com.strolink.whatsUp.ui.views.EmojiToggleButton
+                            android:id="@+id/emoji_toggle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_item_round_ripple"
+                            android:contentDescription="@string/app_name"
+                            android:padding="16dp" />
+
+
+                        <com.vanniktech.emoji.EmojiEditText
+                            android:id="@+id/embedded_text_editor"
+                            style="@style/ComposeEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:hint="@string/write_something"
+                            android:maxLines="10"
+                            android:minHeight="37dp"
+                            android:nextFocusRight="@+id/send_buttonn"
+                            android:nextFocusForward="@+id/send_buttonn"
+                            android:textSize="12sp"
+                            tools:visibility="invisible">
+
+                        </com.vanniktech.emoji.EmojiEditText>
+
+                    </LinearLayout>
+                </com.strolink.whatsUp.ui.views.InputGeneralPanel>
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/send_buttonn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/bg_buttons_backup"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_send_edit_white_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.strolink.whatsUp.ui.dragView.DragToClose>

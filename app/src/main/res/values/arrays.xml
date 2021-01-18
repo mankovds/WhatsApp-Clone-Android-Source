@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="message_font_size_names">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+
+    <string-array name="message_font_size_values">
+        <item>12</item>
+        <item>16</item>
+        <item>20</item>
+    </string-array>
+
+
+    <string-array name="light_names">
+        <item>Blue</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Cyan</item>
+        <item>Metallic</item>
+    </string-array>
+
+
+    <string-array name="light_values">
+
+        <item>#03A9F4</item>
+        <item>#ffffff</item>
+        <item>#f11409</item>
+        <item>#EEFF41</item>
+        <item>#0EC654</item>
+        <item>#00FFFF</item>
+        <item>#0A7E8C</item>
+    </string-array>
+
+
+
+    <!--for calls-->
+
+
+    <!--calls-->
+
+
+</resources>

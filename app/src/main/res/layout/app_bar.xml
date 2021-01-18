@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:minHeight="?attr/actionBarSize"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:subtitleTextAppearance="@style/ToolbarSubTitle" >
+
+    <!-- Progress bar -->
+    <ProgressBar
+        android:id="@+id/toolbar_progress_bar"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_gravity="right"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
+</androidx.appcompat.widget.Toolbar>
+

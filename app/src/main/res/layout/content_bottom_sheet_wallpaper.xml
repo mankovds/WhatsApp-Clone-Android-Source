@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_rect_record_panel"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="left|center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/defaultBtn"
+            android:layout_width="@dimen/slide_down_message_items"
+            android:layout_height="@dimen/slide_down_message_items"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_item_round_ripple"
+            android:clickable="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_attach_camera"
+                android:padding="16dp"
+                app:srcCompat="@drawable/ic_default_wallpaper_white_24dp" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/defaultBtnTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/default_wallpaper"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right|center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/galleryBtn"
+            android:layout_width="@dimen/slide_down_message_items"
+            android:layout_height="@dimen/slide_down_message_items"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_item_round_ripple"
+            android:clickable="true">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_attach_gallery"
+                android:padding="16dp"
+                app:srcCompat="@drawable/ic_photo_white_24dp" />
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/galleryBtnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/wallpaper_gallery"
+            android:textColor="@color/colorBlack" />
+    </LinearLayout>
+
+
+</FrameLayout>

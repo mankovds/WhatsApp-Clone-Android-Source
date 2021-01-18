@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/video_editor_layout"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/app_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/info_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1">
+
+
+
+                <com.strolink.whatsUp.ui.views.VideoTimelineView
+                    android:id="@+id/video_timeline_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+
+                <LinearLayout
+                    android:id="@+id/start_end_time"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/video_timeline_view"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/start_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:layout_gravity="bottom|center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/end_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_weight="1"
+                        android:padding="4dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16sp"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/original_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/start_end_time"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/edited_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/original_size"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="6dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/video_container"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+
+                <SurfaceView
+                    android:id="@+id/video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/play_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="center"
+                    app:srcCompat="@drawable/ic_play_circle_white_72dp" />
+
+                <com.strolink.whatsUp.ui.views.VideoSeekBarView
+                    android:id="@+id/video_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_gravity="bottom"
+                    android:background="#77000000" />
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.strolink.whatsUp.ui.views.InputGeneralPanel
+                    android:id="@+id/bottom_panel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:orientation="horizontal">
+
+
+                        <com.strolink.whatsUp.ui.views.EmojiToggleButton
+                            android:id="@+id/emoji_toggle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_item_round_ripple"
+                            android:contentDescription="@string/app_name"
+                            android:padding="16dp" />
+
+
+                        <com.vanniktech.emoji.EmojiEditText
+                            android:id="@+id/embedded_text_editor"
+                            style="@style/ComposeEditText"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:hint="@string/write_something"
+                            android:minHeight="37dp"
+                            android:nextFocusRight="@+id/send_buttonn"
+                            android:nextFocusForward="@+id/send_buttonn"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp"
+                            tools:visibility="invisible">
+
+                        </com.vanniktech.emoji.EmojiEditText>
+
+                    </LinearLayout>
+                </com.strolink.whatsUp.ui.views.InputGeneralPanel>
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/send_buttonn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/bg_buttons_backup"
+                    android:padding="10dp"
+                    app:srcCompat="@drawable/ic_send_edit_white_24dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

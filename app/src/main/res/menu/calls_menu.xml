@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search_calls"
+        android:icon="@drawable/ic_search_24dp"
+        android:orderInCategory="100"
+        android:title="@string/search"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/clear_log_call"
+        android:orderInCategory="100"
+        android:title="@string/clear_log_call"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        android:title="@string/settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about_app"
+        android:orderInCategory="100"
+        android:title="@string/about_title"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/privacy_termes"
+        android:orderInCategory="100"
+        android:title="@string/title_activity_privacy"
+        app:showAsAction="never" />
+
+</menu>

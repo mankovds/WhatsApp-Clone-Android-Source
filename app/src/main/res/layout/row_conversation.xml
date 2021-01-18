@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/conversation_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_rect_ripple"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_item_background"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="6dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/image_profile_margin">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/user_image"
+                android:layout_width="@dimen/image_profile_width"
+                android:layout_height="@dimen/image_profile_height"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/online_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="end|top"
+                android:background="@drawable/bg_online"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/offline_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/bg_offline"
+                android:layout_gravity="end|top"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/select_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/bg_select_icon"
+                android:gravity="bottom|end"
+                android:padding="3dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_done_24dp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/layoutuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <com.vanniktech.emoji.EmojiTextView
+                    android:id="@+id/username"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="start"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/status_user"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:gravity="end"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/date_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:textColor="@color/colorMessageText"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutuser"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/status_messages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <com.vanniktech.emoji.EmojiTextView
+                        android:id="@+id/last_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:singleLine="true"
+                        android:textColor="@color/colorMessageText"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/file_types_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|start"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorMessageText"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+                <ProgressBar
+                    android:id="@+id/create_group_pro_bar"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutuser"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_circle_counter"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/view_margin_left"
+        android:layout_marginRight="@dimen/view_margin_right"
+        android:background="@color/colorGrayLighter" />
+</LinearLayout>

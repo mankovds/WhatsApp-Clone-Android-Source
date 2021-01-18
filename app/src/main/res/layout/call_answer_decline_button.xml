@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/arrow_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="-15dp"
+        android:alpha="0"
+        android:tint="@color/colorGreenDark"
+        app:srcCompat="@drawable/ic_keyboard_arrow_up_white_36dp"
+        tools:alpha="1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/arrow_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="-15dp"
+        android:alpha="0"
+        android:tint="@color/colorGreenDark"
+        app:srcCompat="@drawable/ic_keyboard_arrow_up_white_36dp"
+        tools:alpha="1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/arrow_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="-15dp"
+        android:alpha="0"
+        android:tint="@color/colorGreenDark"
+        app:srcCompat="@drawable/ic_keyboard_arrow_up_white_36dp"
+        tools:alpha="1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/arrow_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:alpha="0"
+        android:tint="@color/colorGreenDark"
+        app:srcCompat="@drawable/ic_keyboard_arrow_up_white_36dp"
+        tools:alpha="1" />
+
+    <TextView
+        android:id="@+id/swipe_up_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="19dp"
+        android:shadowColor="#94000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="@string/call_swipe_to_answer"
+        android:textColor="@color/colorGreenDark"
+        android:textStyle="italic" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/answer"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circle_tintable"
+        android:elevation="2dp"
+        android:padding="12dp"
+        app:srcCompat="@drawable/ic_call_answer_24dp" />
+
+    <TextView
+        android:id="@+id/swipe_down_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:shadowColor="#94000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
+        android:text="@string/call_swipe_to_reject"
+        android:textColor="@color/colorRedDark"
+        android:textStyle="italic" />
+
+
+</merge>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attachment_type_selector_background"
+    android:orientation="vertical">
+
+    <com.strolink.whatsUp.ui.views.RecentPhotoViewRail
+        android:id="@+id/recent_photos"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.strolink.whatsUp.ui.views.CircleColorImageView
+                android:id="@+id/gallery_button"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:contentDescription="@string/attachment_type_selector__gallery_description"
+                android:scaleType="center"
+                app:circleColor="@color/colorAttachGallery"
+                app:srcCompat="@drawable/ic_photo_white_48dp" />
+
+            <TextView
+                style="@style/AttachmentTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/attachment_type_selector__gallery" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.strolink.whatsUp.ui.views.CircleColorImageView
+                android:id="@+id/audio_button"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:contentDescription="@string/attachment_type_selector__audio_description"
+                android:scaleType="center"
+                app:circleColor="@color/colorAttachAudio"
+                app:srcCompat="@drawable/ic_audio_white_48dp" />
+
+            <TextView
+                style="@style/AttachmentTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/attachment_type_selector__audio" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.strolink.whatsUp.ui.views.CircleColorImageView
+                android:id="@+id/document_button"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:contentDescription="@string/attachment_type_selector__file_description"
+                android:scaleType="center"
+                app:circleColor="@color/colorAttachDoc"
+                app:srcCompat="@drawable/ic_insert_drive_file_white_48dp" />
+
+            <TextView
+                style="@style/AttachmentTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/attachment_type_selector__file" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.strolink.whatsUp.ui.views.CircleColorImageView
+                android:id="@+id/contact_button"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:contentDescription="@string/attachment_type_selector__contact_description"
+                android:scaleType="center"
+                app:circleColor="@color/colorAttachContact"
+                app:srcCompat="@drawable/ic_contacts_white_24dp" />
+
+            <TextView
+                style="@style/AttachmentTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/attachment_type_selector__contact" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.strolink.whatsUp.ui.views.CircleColorImageView
+                android:id="@+id/camera_button"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:contentDescription="@string/attachment_type_selector__camera_description"
+                android:scaleType="center"
+                app:circleColor="@color/colorAttachCamera"
+                app:srcCompat="@drawable/ic_photo_camera_white_48dp" />
+
+            <TextView
+                style="@style/AttachmentTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/attachment_type_selector__camera" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.strolink.whatsUp.ui.views.CircleColorImageView
+                android:id="@+id/location_button"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:contentDescription="@string/attachment_type_selector__location_description"
+                android:scaleType="center"
+                app:circleColor="@color/colorAttachLocation"
+                app:srcCompat="@drawable/ic_location_24dp" />
+
+            <TextView
+                style="@style/AttachmentTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/attachment_type_selector__location" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.strolink.whatsUp.ui.views.CircleColorImageView
+                android:id="@+id/giphy_button"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:contentDescription="@string/attachment_type_selector__gif_description"
+                android:scaleType="center"
+                app:circleColor="@color/colorAttachGif"
+                app:srcCompat="@drawable/ic_gif_white_24dp" />
+
+            <TextView
+                style="@style/AttachmentTypeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/attachment_type_selector__gif" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.strolink.whatsUp.ui.views.CircleColorImageView
+                android:id="@+id/close_button"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:scaleType="center"
+                app:circleColor="@color/colorGrayLighter"
+                app:srcCompat="@drawable/ic_arrow_down_24dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

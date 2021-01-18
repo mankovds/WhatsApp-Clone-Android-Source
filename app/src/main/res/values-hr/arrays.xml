@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="message_font_size_names">
+        <item>Malo</item>
+        <item>Srednje</item>
+        <item>Veliko</item>
+    </string-array>
+
+
+    <string-array name="message_font_size_values">
+        <item>12</item>
+        <item>16</item>
+        <item>20</item>
+    </string-array>
+
+
+
+    <string-array name="light_names">
+        <item>Plavo</item>
+        <item>Belo</item>
+        <item>Crveno</item>
+        <item>žuto</item>
+        <item>Zeleno</item>
+        <item>Cyan</item>
+        <item>Matalik</item>
+    </string-array>
+
+
+    <string-array name="light_values">
+
+        <item>#03A9F4</item>
+        <item>#ffffff</item>
+        <item>#f11409</item>
+        <item>#EEFF41</item>
+        <item>#0EC654</item>
+        <item>#00FFFF</item>
+        <item>#0A7E8C</item>
+    </string-array>
+
+
+
+</resources>

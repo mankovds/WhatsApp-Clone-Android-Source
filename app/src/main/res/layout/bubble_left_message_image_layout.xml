@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:layout_marginStart="3dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:clickable="true"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/date_general_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
+        android:background="@drawable/bb_state"
+        android:clickable="false"
+        android:enabled="false"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="@color/colorMessageText"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_item_background_primary"
+        android:gravity="start"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bb_left"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/sender_name"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="4dp"
+                android:paddingTop="1dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="1dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/replied_message_view"
+                layout="@layout/replied_message_view"
+                android:visibility="gone" />
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="@color/transparent"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="0dp">
+
+                    <com.strolink.whatsUp.ui.views.AspectRatioImageView
+                        android:id="@+id/image_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:scaleType="centerCrop"
+                        app:height_ratio="4"
+                        android:adjustViewBounds="true"
+                        app:width_ratio="5"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_upload_image_init"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_progress_bar"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_upload_image"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_progress_bar"
+                    android:max="100"
+                    android:padding="5dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_circle_progress"
+                    android:visibility="gone" />
+
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/cancel_upload_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_close_gary_24dp" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_download_image_init"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_progress_bar"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_download_image"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_progress_bar"
+                    android:indeterminate="true"
+                    android:max="100"
+                    android:padding="5dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_circle_progress"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/cancel_download_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_close_gary_24dp" />
+
+                <LinearLayout
+                    android:id="@+id/download_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_retry"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="6dp"
+                        app:srcCompat="@drawable/ic_file_download_gary_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/file_size_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="6dp"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/retry_upload_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_retry"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="6dp"
+                        app:srcCompat="@drawable/ic_file_upload_gray_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="6dp"
+                        android:text="@string/retry"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/bubble_message_date" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

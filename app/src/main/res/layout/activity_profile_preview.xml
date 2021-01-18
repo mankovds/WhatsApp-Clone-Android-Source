@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerProfile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/containerProfileInfo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+
+        <com.vanniktech.emoji.EmojiTextView
+            android:id="@+id/userProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/text_size" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/userProfilePicture"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_empty"
+            android:layout_gravity="center" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/actionProfileArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/ContactBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/app_name"
+                        android:gravity="center"
+                        android:padding="13dp"
+                        app:srcCompat="@drawable/ic_chat_green_24dp" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/CallBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/app_name"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_call_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/CallVideoBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/app_name"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_videocam_green_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/AboutBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/app_name"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        app:srcCompat="@drawable/ic_info_outline_green_24dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/invite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/invite"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

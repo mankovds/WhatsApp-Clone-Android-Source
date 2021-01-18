@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Date format -->
+    <string name="date_format_yesterday">Yesterday</string>
+
+    <string name="number">број Мобилног Телефона</string>
+    <string name="NoMessages">Нема разговора још, можда ћете почети један сада</string>
+    <string name="NoCalls">Нема позива још, можда ћете почети један сада</string>
+    <string name="NoContacts">Нема контаката. Молимо Вас да покушате поново касније или додати нов</string>
+    <string name="NoResult">Ништа</string>
+    <string name="error_response_contacts">Не могу ажурирати своје контакте.</string>
+    <string name="name_is_too_short">прекратако име</string>
+    <string name="select_picture">Одаберите слику</string>
+    <string name="new_group">Нова група</string>
+    <string name="status">Штатус</string>
+    <string name="settings">Подешавање</string>
+    <string name="refresh_contacts">Освежи</string>
+    <string name="search">Претражи</string>
+    <string name="add_contact">Додај Контакт</string>
+    <string name="new_message">Нова Порука</string>
+    <string name="title_activity_add_members_to_group">Нова група</string>
+    <string name="title_activity_settings">Подешавање</string>
+    <string name="title_activity_edit_profile">Профил</string>
+    <string name="edit">Уреди</string>
+    <string name="view_in_ad_book">Погледај у Адресар</string>
+    <string name="next">Следеће</string>
+    <string name="set_back_and_keep_calm_you_will_receive_an_sms_of_verification">Ви ћете добити SMS за верификацију вашег Мобилног Телефона</string>
+    <string name="resend">Нисте добили код? Поновно Послати</string>
+    <string name="enter_the_code_below_to_verify">Унесите код за провјеру Испод</string>
+    <string name="enter_your_code">-- -- -- -- -- --</string>
+    <string name="ok">OK</string>
+    <string name="please_enter_your_ver_code">Молимо унесите верификацијски код</string>
+    <string name="enter_a_val_number">Унесите важећи мобилни телефон</string>
+    <string name="invite">ПОЗОВИ</string>
+    <string name="your_current_status">Ваш тренутни штатус</string>
+    <string name="select_your_new_status">Изаберите свој нови штатус</string>
+    <string name="title_activity_status">Штатус</string>
+    <string name="Yes">Да</string>
+    <string name="No">Не</string>
+    <string name="delete">Избриши</string>
+    <string name="delete_status">Избриши штатус</string>
+    <string name="cancel">Одустани</string>
+    <string name="Ok">OK</string>
+    <string name="write_something">Напиши Нешто</string>
+    <string name="title_activity_edit_status">Измени штатус</string>
+    <string name="deleteALL">Избриши све</string>
+    <string name="oops_something">Оопс нешто пошло по злу </string>
+    <string name="oops_something_crashed">Оопс !! Нешто пошло по злу. Пошаљите извјештај програмеру</string>
+    <string name="no_status"> Нема штатус </string>
+    <string name="no_username"> Нема Корисничко Име </string>
+    <string name="edit_status_activity_title">Измени свој штатус</string>
+    <string name="title_activity_edit_name">Унесите своје име</string>
+    <string name="title_select_contacts">Одабери контакт</string>
+    <string name="success_response_contacts">Ваши контакти су ажуриране Успјешно</string>
+
+    <string name="exit">Изађи</string>
+    <string name="shareContact">Подијели контакт</string>
+
+    <!--actions user -->
+    <string name="isTyping">Пише…</string>
+    <string name="isOffline">Одjављен</string>
+    <string name="isOnline">на Мрежи</string>
+
+
+    <!--end date format-->
+    <string name="search_">Претражи …</string>
+    <string name="add_new_member">Додај</string>
+    <string name="type_group_subject_here">Откуцајте предмет групе овђе …</string>
+    <string name="provide_group_subject_and_optional_group_icon">Пружити тему групе и опционално иконицу групе</string>
+    <string name="title_activity_edit_group_name">Унесите нову тему</string>
+    <string name="attach_camera">Камера</string>
+    <string name="attach_gallery">Слика</string>
+    <string name="media">Медиа</string>
+    <string name="clear_chat">Обришете ћаскање</string>
+    <string name="view_contact">Погледај Контакт</string>
+    <string name="group_info">Информације о групи</string>
+    <string name="search_hint">Претражи…</string>
+    <string name="alert_message_delete_conversation">Избриши разговор. Јесте ли сигурни?</string>
+    <string name="hold_to_record">Држите за снимање</string>
+
+    <!-- Permissions strings start -->
+    <string name="record_audio_permission_message">Снимање звука дозволу омогућује снимање аудио. Дозволите за додатну функционалност у Апп Сеттингс.</string>
+    <string name="location_permission_message">get Location permission allows you access to your contacts. Please allow in App Settings for additional functionality.</string>
+    <string name="write_storage_permission_message">Write External permission allows us  access to your media. Please allow in App Settings for additional functionality.</string>
+    <string name="write_contacts_permission_message">Write Contacts permission allows you access to your contacts. Please allow in App Settings for additional functionality.</string>
+
+    <!--Permissions strings end -->
+
+    <string name="deleting_chat">" Брисање ћаскање… "</string>
+    <string name="copy_message">Копирај</string>
+    <string name="transfer_message">Forward</string>
+    <string name="message_delete">Избриши поруку?</string>
+    <string name="message_copy">Text порука</string>
+
+    <!--settings strings-->
+    <string name="notifications">Обавјештења</string>
+    <string name="chats">Ћаскања</string>
+    <string name="account">Кориснички Рачун</string>
+    <string name="delete_my_account">Избрисати свој рачун</string>
+    <string name="chat_settings">Подешавања ћаска.</string>
+    <string name="enter_key_off">Ће додати нову линију Ентер</string>
+    <string name="enter_key_on">Ће послати своју поруку Ентер</string>
+    <string name="enter_key">Enter key is send</string>
+    <string name="message_font_size">Величина Слова</string>
+    <string name="message_font_size_summary">Величина слова за поруке</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="conversation_tones_off">Звук за долазне и одлазне поруке</string>
+    <string name="message_notifications_settings">Поруке обавештења</string>
+    <string name="notifications_settings_tone">Звук за обавештавање</string>
+    <string name="default_settings">Дефаулт</string>
+    <string name="message_notifications_settings_vibrate">избор Вибрирај</string>
+    <string name="message_notifications_settings_light">Свјетло</string>
+    <string name="call_notifications_settings_vibrate">избор Вибрирај</string>
+    <string name="conversation_tones">Звук за конверзације</string>
+    <string name="message_group_notifications_settings">Oбавештења за Групе</string>
+    <string name="title_activity_delete_account">Избрисати налог</string>
+    <string name="title_activity_change_number">Промијени број</string>
+    <string name="title_activity_account_settings">Налог</string>
+    <string name="call_notifications_settings">обавештења за Позив</string>
+    <string name="call_ringtone">Рингтоне</string>
+    <string name="message_notifications_settings_tone_silent">Силент</string>
+    <string name="call_notifications_settings_tone_silent">Силент</string>
+    <string name="select_one_at_least">"Барем морате одабрати један "</string>
+    <string name="participants">Учесници :</string>
+    <string name="create_group_failed">Креирати групу није успио</string>
+    <string name="slide_to_cancel_audio">Slide To Cancel</string>
+    <string name="message_is_copied">Порука копирана</string>
+    <string name="of">" од "</string>
+    <string name="failed_upload_image">"Није успјело уплоад слике "</string>
+
+    <!--group adapters start -->
+    <string name="exit_group">Изађи \"</string>
+    <string name="group_ex">\" група?</string>
+    <string name="exiting_group_dialog">" Изађи из групе… "</string>
+    <string name="deleting_group_dialog">" Брисање групе… "</string>
+    <string name="created_by_you_at">Креирано од вас дана</string>
+    <string name="created_by">"Креирано од "</string>
+    <string name="group_at">at</string>
+    <string name="failed_to_delete_this_group_check_connection">Није успјело брисање ове групе провјерите своју везу</string>
+    <string name="failed_to_exit_this_group_check_connection">Није успјело изаци из ове групе провјерите своју везу</string>
+    <string name="adding_new_status">Додавање новог статуса…</string>
+    <string name="add_to_group">"Додај "</string>
+    <string name="member_to_group">" члан у групу"</string>
+    <string name="adding_member">" Додаје члан… "</string>
+    <string name="you">Ви</string>
+    <!--group member options start -->
+    <string name="message_group_option">"Порука "</string>
+    <string name="view_group_option">"Погледај "</string>
+    <string name="make_admin_group_option"> је админ</string>
+    <string name="make_member_group_option"> корисник</string>
+    <string name="make_group_option"> Направи </string>
+    <string name="remove_group_option">"Уклони "</string>
+    <!--group member options end -->
+    <string name="remove_from_group">"Уклони "</string>
+    <string name="from_group">" из групе"</string>
+    <string name="failed_to_make_member_as_admin">Failed to make this member(s) as an admin please try again later</string>
+    <string name="failed_to_remove_member">Није уклонио овај члан(ове) молимо покушајте поново касније</string>
+    <!--group adapters end -->
+    <!--conversations and messages  adapters start-->
+    <string name="you_created_this_group">Креирали сте ову групу</string>
+    <string name="he_created_this_group">" креирао ову групу"</string>
+    <string name="you_left">Напустили сте</string>
+    <string name="he_left">" напустио"</string>
+    <string name="no_application_to_view_pdf">Није доступна Апликација за приказивање ПДФ</string>
+    <!--conversations and messages adapters start-->
+    <string name="transfer_message_to">"Transfer  message or Share content to "</string>
+    <string name="no_app_to_play_audio">"Није доступна Апликација за плаy аудио "</string>
+    <string name="delete_all_status_dialog">Брисање свих статуса …</string>
+    <string name="deleting">Брисање…</string>
+    <string name="updating_status">Ажурирање Штатуса…</string>
+    <string name="your_status_updated_successfully">Ваш штатус је успјесно избрисан</string>
+
+
+    <string name="reply_message">Одговори</string>
+
+
+    <string name="message_notifications_settings_vibrate_off">Вибрација Офф</string>
+    <string name="message_notifications_settings_vibrate_on">Вибрација Он</string>
+    <string name="call_notifications_settings_vibrate_off">Вибрација Офф</string>
+    <string name="call_notifications_settings_vibrate_on">Вибрација Он</string>
+    <string name="enjoy_it">Уживајте</string>
+    <string name="app_version">"Верзија "</string>
+    <string name="alert_message_delete_account">Јесте ли сигурни да желите да избришете свој налог</string>
+    <string name="unexpected_reponse_from_server">Неочекиван одговор од сервера</string>
+    <string name="you_send_messages"> Не можете слати поруке у ову групу Зато што ниси више учесник</string>
+    <string name="failed_exit_group">Није успео да изађете из групе</string>
+    <string name="this_video_is_not_exist">Овај видео више није доступан</string>
+    <string name="this_image_is_not_exist">Ова слика не постоји више</string>
+    <string name="this_audio_is_not_exist">Овај аудио више не постоји</string>
+    <string name="this_document_is_not_exist">Овај документ више не постоји</string>
+
+    <!--Directories strings-->
+
+    <string name="profile_photos">Профил Фотографије</string>
+    <string name="images_directory">Фотографије</string>
+    <string name="data_cache_directory">Backups</string>
+    <string name="videos_directory">Видео</string>
+    <string name="audios_directory">Аудио</string>
+    <string name="documents_directory">Доkументи</string>
+    <string name="directory_wallpaper">Wallpaper</string>
+    <string name="directory_sent">Пошаљи</string>
+    <string name="video_thumbnail">Thumbnail</string>
+    <string name="image_saved">Фотографија је Сачувана</string>
+    <string name="save_to_gallery">Сачувај у галерију</string>
+    <string name="shareItem">Подели</string>
+    <string name="this_message_empty">Ова порука је празна</string>
+    <string name="share_message">Подели</string>
+    <string name="you_can_share_more_then_one">Не можете дијелити више од једну ставку</string>
+    <!--others -->
+    <string name="add_to_you_contact">Додај ову особу у својим контактима </string>
+    <string name="status_and_phone">Штатус и телефон</string>
+
+    <!-- Rate Strings -->
+    <string name="rate_title">Гласај %s</string>
+    <string name="rate_message">Ако вам се Свиђа наша Апликација %s, Гласате за њу? Хвала на подршци!</string>
+    <string name="rate">Да, Гласај %s</string>
+    <string name="rate_later">Подсјети ме касније</string>
+    <string name="rate_cancel">Не, Хвала</string>
+    <string name="rate_helper_google_play_url">https://play.google.com/store/apps/details?id=%s</string>
+    <string name="update">Да, Ажурирај %s</string>
+    <string name="update_title">Ажурирај %s</string>
+    <string name="update_app_message">Здраво, ова верзија </string>
+    <string name="update_message_complete">" Апликација застарјела. Молимо идите на Гоогле Плаy Сторе да бисте преузели најновију верзију."</string>
+    <!--calls strings-->
+    <string name="incoming_call">Долазни позив</string>
+    <string name="clear_log_call">Брисање листе позива</string>
+    <string name="voice_call">Говорни Позив</string>
+    <string name="video_call">Видео Позив</string>
+    <string name="call_history">History</string>
+    <string name="title_calls">Позив Инфо</string>
+    <string name="remove_from_log">Уклони из евиденције позив</string>
+    <string name="block_user">Блокираји</string>
+    <string name="delete_call_dialog">Бришем…</string>
+    <string name="call_select_voice">Упутите говорни позив    </string>
+    <string name="call_select_video">Упутите видео позива   </string>
+    <string name="you_couldnt_call_this_user_network">Не можете позвати. Провјерите је ли ваш телефон има интернет везу и покушајте поновно.</string>
+    <string name="duration">Трајање</string>
+    <string name="about_title">О Нама</string>
+    <string name="default_wallpaper">Дефаулт</string>
+    <string name="wallpaper_gallery">Галерија</string>
+    <string name="wallpaper_is_set">Wallpaper Set</string>
+    <string name="you_can_copy_more_then_one">Не можете копирати више од једне ставке</string>
+    <string name="documents">Документи</string>
+    <string name="links">Links</string>
+    <string name="this_a_pdf_file_document">Ово је ПДФ Фајл</string>
+    <string name="title_activity_privacy"><![CDATA[Приватност и Увјети]]></string>
+    <string name="english">Енглески</string>
+    <string name="german">Немацки</string>
+    <string name="italian">Italian</string>
+    <string name="srbski">Србски</string>
+    <string name="bosnisch">босански</string>
+    <string name="romaneste">Румунски</string>
+    <string name="french">Француски</string>
+    <string name="turski">турски</string>
+    <string name="tschechisch">чешки</string>
+    <string name="grichisch">грчки</string>
+    <string name="spanisch">шпански</string>
+    <string name="kroatisch">хрватски</string>
+    <string name="indonesisch">Индонезијски</string>
+    <string name="mazedonisch">македонски</string>
+    <string name="rusisch">руски</string>
+    <string name="slovenisch">словеначки</string>
+    <string name="title_language">Језик</string>
+    <!--new strings-->
+
+    <string name="you_need_to_restart_the_application">Потребно је да поново покренути апликацију</string>
+
+    <string name="selected">Одабрано</string>
+    <string name="current_language">тренутно</string>
+
+    <string name="block_user_make_sure">Хоћете ли блокирати овог корисника, тако да он више није у стању да ти се јави или шаље поруке. Јеси сигуран ?</string>
+    <string name="unblock_user_make_sure">Хоћете ли деблокирати овог корисника, тако да ће бити у стању да те позове и шаље поруке Јеси сигуран ?</string>
+    <string name="unblock_user">Одблокирати</string>
+    <string name="title_blocked_contacts">Блокирани Контакти</string>
+    <string name="missed_video_call">Пропуштени видео позиви</string>
+    <string name="missed_voice_call">Пропуштени позив</string>
+    <string name="outgoing_video_call">Излазни видео Позиви</string>
+    <string name="outgoing_voice_call">Излазни Позиви</string>
+
+    <string name="invitation_from">Позив од</string>
+    <string name="your_session_expired">Ваша сесија је Истекла</string>
+    <!--new strings-->
+    <string name="click_on">Click on </string>
+    <string name="to_choose_your_country_n_and_enter_your_phone_number"> to choose your country   and enter your phone number</string>
+    <string name="username">Username</string>
+    <string name="complete_registration_optional">This is an optional step you can skip it without edit anything</string>
+    <string name="complete_registration">Complete Registration</string>
+    <string name="dialog_loading">Loading…</string>
+    <string name="get_started">Get started</string>
+    <string name="number_not_match">This number not match the first one you insert to verify .please try again</string>
+
+    <string name="you_can_select_your_favorite_language_from_here">You can select your favorite language from here</string>
+    <string name="signup_terms">By Proceeding you also agree to application’s Terms of Service and
+		Privacy Policy.
+	</string>
+    <string name="new_messages_notify">new messages</string>
+    <string name="messages_from_notify">messages from</string>
+    <string name="chats_notify">chats</string>
+    <string name="phone">Phone</string>
+    <string name="exit_group_prof">Exit group</string>
+    <string name="delete_group">Delete group</string>
+    <string name="participants_prof">Members</string>
+
+    <string name="chats_title_tab" >Chats</string>
+    <string name="connecting">Connecting ...</string>
+    <string name="unknown">Unknown</string>
+    <string name="unable_to_record_audio">Unable to record audio</string>
+    <string name="Attach_cant_open_media_selection">Can\\\'t find an app to select media.</string>
+    <string name="send_location">Send Location</string>
+    <string name="MyLocation">My location</string>
+    <string name="Map">Map</string>
+    <string name="Satellite">Satellite</string>
+    <string name="Hybrid">Hybrid</string>
+    <string name="MetersAway">m away</string>
+    <string name="KMetersAway">km away</string>
+    <string name="ChatLocation">Location</string>
+    <string name="ShareLocation">Share location</string>
+    <string name="GiphyFragmentPagerAdapter_gifs">GIFs</string>
+    <string name="GiphyFragmentPagerAdapter_stickers">Stickers</string>
+    <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Error while retrieving full resolution GIF</string>
+    <string name="giphy_activity_toolbar__search_gifs_and_stickers">Search GIFs and stickers</string>
+    <string name="date_format_today">TODAY</string>
+    <string name="call_swipe_to_answer">Swipe up to answer</string>
+    <string name="call_swipe_to_reject">Swipe down to reject</string>
+    <string name="app_needs_access_to_your_contacts_and_media_in_order_to_connect_with_friends">application needs access to your contacts and media in order to connect with friends, exchange messages, and make  calls</string>
+    <string name="app__requires_contacts_permission_in_order_to_attach_contact_information">Application requires Contacts permission in order to attach contact information, but it has been permanently denied. Please continue to the app settings menu, select \\\"Permissions\\\", and enable \\\"Contacts\\\".</string>
+    <string name="contact_permission_required">The contact permission is required to use this application</string>
+    <string name="all_permission_required">Those permissions are required</string>
+    <string name="app__requires_storage_permission_in_order_to_attach_media_information">Application requires the Storage permission in order to attach photos, , but it has been permanently denied. Please continue to the app settings menu, select \"Permissions\", and enable \"Storage\".</string>
+    <string name="conversation_row_image">Image</string>
+    <string name="conversation_row_location">Location</string>
+    <string name="conversation_row_gif">Gif</string>
+    <string name="conversation_row_video">Video</string>
+    <string name="conversation_row_audio">Audio</string>
+    <string name="conversation_row_document">Document</string>
+    <string name="calls_title_tab">Calls</string>
+    <string name="gifs_directory">Gifs</string>
+    <string name="to_capture_photos_and_video_allow_appp_access_to_the_camera">To capture photos and video, allow Isco access to the camera.</string>
+    <string name="appp_needs_the_camera_permission_to_take_photos_or_video">Application needs the Camera permission to take photos or video, but it has been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Camera\".</string>
+    <string name="appp_needs_camera_permissions_to_take_photos_or_video">Application needs Camera permissions to take photos or video</string>
+    <string name="Permissions_continue">Continue</string>
+    <string name="Permissions_not_now">Not now</string>
+    <string name="Permissions_permission_required">Permissions Required</string>
+    <!-- attachment_type_selector -->
+    <string name="attachment_type_selector__audio">Audio</string>
+    <string name="attachment_type_selector__audio_description">Audio</string>
+    <string name="attachment_type_selector__contact">Contact</string>
+    <string name="attachment_type_selector__contact_description">Contact</string>
+    <string name="attachment_type_selector__camera">Camera</string>
+    <string name="attachment_type_selector__camera_description">Camera</string>
+    <string name="attachment_type_selector__location">Location</string>
+    <string name="attachment_type_selector__location_description">Location</string>
+    <string name="attachment_type_selector__gif">GIF</string>
+    <string name="attachment_type_selector__gif_description">Gif</string>
+    <string name="attachment_type_selector__gallery_description">Image or video</string>
+    <string name="attachment_type_selector__file_description">File</string>
+    <string name="attachment_type_selector__gallery">Gallery</string>
+    <string name="attachment_type_selector__file">Document</string>
+    <string name="to_call_s_app_needs_access_to_your_microphone_and_camera">To call %s, Application needs access to your microphone and camera.</string>
+    <string name="app_needs_the_microphone_and_camera_permissions_in_order_to_call_s">Application needs the Microphone and Camera permissions in order to call %s, but they have been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Microphone\" and \"Camera\".</string>
+    <string name="to_answer_the_call_from_s_give_app_access_to_your_microphone">To answer the call from %s, give Application access to your microphone.</string>
+    <string name="app_requires_microphone_and_camera_permissions_in_order_to_make_or_receive_calls">Application requires Microphone and Camera permissions in order to make or receive calls, but they have been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Microphone\" and \"Camera\".</string>
+
+    <string name="he_edited_this_group">edited  the  group name</string>
+    <string name="he_make_member_this_group">make a user as member</string>
+    <string name="he_make_admin_this_group">make a user as admin</string>
+    <string name="he_added_this_group">added new member</string>
+    <string name="he_removed_this_group">removed a member</string>
+    <string name="you_edited_this_group">You edit this group name</string>
+    <string name="you_make_member_this_group">You make a user as member</string>
+    <string name="you_make_admin_this_group">You make a user as member</string>
+    <string name="you_added_this_group">You\'ve added new member</string>
+    <string name="you_removed_this_group">You\'ve removed a member</string>
+    <string name="title_activity_add_new_members_to_group">Add new members</string>
+    <string name="new_missed_call">You have a new missed call</string>
+    <string name="audio_call_notify">Audio Call</string>
+    <string name="video_call_notify">Video Call</string>
+    <string name="you_couldnt_call_this_user">Couldn\'t place call. This User is not available now please try later</string>
+    <string name="you_couldnt_call">Couldn\'t place call</string>
+    <string name="story_title_tab">Status</string>
+    <string name="just_now">Just Now</string>
+    <string name="my_story">My status</string>
+    <string name="reply">Reply</string>
+    <string name="type_here_to_create_your_story">Type here to create your story..!</string>
+    <string name="file_limit_size_upload_format">Files must be less than %sMB</string>
+    <string name="nothing_to_undo">There is nothing to undo</string>
+    <string name="retry">RETRY</string>
+    <string name="this_type_of_file_not_supported">This type of file is not supported</string>
+    <string name="plus_99">+99</string>
+    <string name="selected_items">%s selected</string>
+    <string name="this_message_unsent">This message is not already sent</string>
+    <string name="who_can_see_your_stories_updates">Who can see your stories updates</string>
+    <string name="changes_to_your_privacy_settings_won_t_affect_stories_updates_that_you_ve_sent_already">Changes to your privacy settings won\'t affect stories updates that you\'ve sent already</string>
+    <string name="my_contacts">My contacts</string>
+    <string name="my_contacts_except">My contacts except...</string>
+    <string name="my_contacts_with">My contacts with</string>
+    <string name="title_stories_privacy">Stories privacy</string>
+    <string name="select_all">Select all</string>
+    <string name="title_hide_stories_from">Hide stories from...</string>
+    <string name="title_sub_hide_stories_from">No contacts excluded</string>
+    <string name="title_share_stories_with">Share stories with...</string>
+    <string name="title_sub_share_stories_with">No contacts selected</string>
+    <string name="excluded_items">%s excluded</string>
+    <string name="loading">Loading...</string>
+    <string name="edit_video">Edit Video</string>
+    <string name="gallery">Gallery</string>
+    <string name="see_more">See more</string>
+    <string name="your_story_updates_will_disappear_after_24_hours">Your story updates will disappear after 24 hours</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="sending_reply">Sending reply ...</string>
+    <string name="viewed_by">Viewed By</string>
+    <string name="no_one_view_the_story">No one view the story</string>
+    <string name="Page2Title">Fast</string>
+    <string name="Page3Title">Free</string>
+    <string name="Page4Title">Secure</string>
+    <string name="Page5Title">Powerful</string>
+    <string name="Page1Message">Welcome to the era of fast and secure messaging. Please swipe to discover the features and register</string>
+    <string name="Page2Message"><![CDATA[delivers messages faster than<![CDATA[<br/>]]>any other application]></string>
+    <string name="Page3Message"><![CDATA[is free .<![CDATA[<br/>]]>No subscription fees]></string>
+    <string name="Page4Message"><![CDATA[keeps your messages safe<![CDATA[<br/>]]>from hacker attacks]></string>
+    <string name="Page5Message"><![CDATA[has no limits on the size of<![CDATA[<br/>]]>your media and chats]></string>
+    <string name="initializing">Initializing ...</string>
+    <string name="no_application_to_view_word">No Application Available to View WORD</string>
+    <string name="no_application_to_view_ppt">No Application Available to View POWER POINT</string>
+    <string name="no_application_to_view_excel">No Application Available to View EXCEL</string>
+    <string name="username_required">Username is required</string>
+    <string name="Hello_get">Hello, get</string>
+    <string name="so_you_can_easly">so we can easily chat  with each other !</string>
+    <string name="hi_i_m_using_app">Hi there! i\'m using</string>
+    <string name="contact_media_permission_required"><![CDATA[Media & contacts permissions are required to run the app normally]]></string>
+    <string name="PhoneMobile">PhoneMobile</string>
+    <string name="PhoneHome">PhoneHome</string>
+    <string name="my_stories">My stories</string>
+    <string name="sending_file_to">Sending File to</string>
+    <string name="you_ve_reached_the_limit">You can not add more then %d</string>
+    <string name="contacts_title_tab">Contacts</string>
+    <string name="you_cant_delete_dflt_status">You can\'t delete the default status</string>
+    <string name="last_seen">Last Seen</string>
+
+</resources>

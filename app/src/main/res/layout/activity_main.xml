@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.main.MainActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+
+        <com.strolink.whatsUp.adapters.others.WhatsCloneViewPager
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <RelativeLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorStories"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    android:elevation="0dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/colorPrimary"
+                    app:tabIndicatorColor="@color/colorWhite"
+                    app:tabIndicatorHeight="4dp"
+                    app:tabSelectedTextColor="@color/colorWhite"
+                    app:tabTextColor="@color/colorUnSelectedTab" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/storiesList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="false"
+                    android:background="@color/colorStories"
+                    android:orientation="horizontal"
+                    android:scrollbars="horizontal"
+                    android:visibility="visible" />
+
+                <include layout="@layout/shadow_view" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/layout_appbar_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:visibility="gone">
+
+
+                <include layout="@layout/app_bar_layout_custom_search_view" />
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/adParentLyout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingBtnMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="4dp"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_chat_white_24dp"
+            app:tint="@color/colorWhite" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <LinearLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:enabled="false"
+        android:orientation="vertical"
+        android:visibility="gone" />
+</FrameLayout>

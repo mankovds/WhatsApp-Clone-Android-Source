@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.settings.DeleteAccountActivity">
+
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <include layout="@layout/shadow_view" />
+
+    <LinearLayout
+        android:id="@+id/account_kit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/btn_request_sms_kit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/save_btn_background"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <com.strolink.whatsUp.ui.CustomProgressView
+            android:id="@+id/progress_bar_load_kit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="1dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <com.strolink.whatsUp.adapters.others.NonSwipeViewPager
+        android:id="@+id/viewPagerVertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite">
+
+
+        <LinearLayout
+            android:id="@+id/numberPhone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/numberPhone_layout_sv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardElevation="1dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/country_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="6dp"
+                                android:gravity="center"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/short_description_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:gravity="center"
+                                android:padding="16dp"
+                                android:textColor="@color/colorRedDark"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/inputs_background"
+                                android:visibility="visible">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/country_code"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/bg_item_rect_ripple"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:padding="16dp"
+                                    android:textColor="@color/colorAccent"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold"
+                                    android:visibility="visible" />
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/numberPhone"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_margin="16dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorWhite"
+                                    android:hint="@string/number"
+                                    android:inputType="phone" />
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/btn_request_sms"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginBottom="16dp"
+                                android:background="@drawable/save_btn_background"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="8dp"
+                                android:paddingRight="20dp"
+                                android:paddingBottom="8dp"
+                                android:text="@string/next"
+                                android:textColor="@color/colorWhite" />
+
+
+                            <com.strolink.whatsUp.ui.CustomProgressView
+                                android:id="@+id/progress_bar_load"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="1dp"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_verification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/layout_verification_sv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:text="@string/set_back_and_keep_calm_you_will_receive_an_sms_of_verification"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="16sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:gravity="center_horizontal"
+                        android:paddingLeft="40dp"
+                        android:paddingRight="40dp"
+                        android:text="@string/enter_the_code_below_to_verify"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/inputOtpWrapper"
+                                style="@style/TextInputEditTextStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bg_edit_text_join"
+                                android:hint="@string/enter_your_code"
+                                android:inputType="phone"
+                                android:maxLength="6"
+                                android:padding="16dp" />
+
+                            <View
+                                android:layout_width="wrap_content"
+                                android:layout_height="2dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginRight="16dp"
+                                android:background="@color/colorGray" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/TimeCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="03:15"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="13sp"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/btn_verify_otp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="16dp"
+                            android:background="@drawable/bg_circle_sign_up"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            app:srcCompat="@drawable/ic_chevron_right_blue_24dp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/btn_change_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="6dp"
+                            android:background="@drawable/bg_circle_sign_up_edit"
+                            android:gravity="center"
+                            android:padding="8dp"
+                            app:srcCompat="@drawable/ic_mode_edit_red_24dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/current_mobile_number"
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="6dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/Resend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="@string/resend"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </com.strolink.whatsUp.adapters.others.NonSwipeViewPager>
+
+    <TextView
+        android:id="@+id/deleting_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="16dp"
+        android:text="@string/deleting" />
+</LinearLayout>

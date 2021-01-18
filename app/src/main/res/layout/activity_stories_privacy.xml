@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/who_can_see_your_stories_updates"
+
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <RadioButton
+            android:id="@+id/my_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_contacts"
+            android:textColor="@color/colorBlack" />
+
+        <RadioButton
+            android:id="@+id/my_contacts_except"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_contacts_except"
+            android:textColor="@color/colorBlack" />
+
+        <RadioButton
+            android:id="@+id/my_contacts_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_contacts_with"
+            android:textColor="@color/colorBlack" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/changes_to_your_privacy_settings_won_t_affect_stories_updates_that_you_ve_sent_already" />
+</LinearLayout>

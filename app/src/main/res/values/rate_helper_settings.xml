@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="rate_helper_days_until_prompt">30</integer>
+    <integer name="rate_helper_launches_until_prompt">15</integer>
+    <integer name="rate_helper_events_until_prompt">15</integer>
+    <!-- Set this to 0 to remind every launch -->
+    <integer name="rate_helper_days_before_reminding">3</integer>
+    <!-- Change to true to show every time, for testing -->
+    <bool name="rate_helper_test_mode">false</bool>
+    <!-- Change modify button colors -->
+
+
+    <!--for update the app -->
+    <integer name="update_helper_days_until_prompt">2</integer>
+    <integer name="update_helper_launches_until_prompt">1</integer>
+    <integer name="update_helper_events_until_prompt">1</integer>
+    <!-- Set this to 0 to remind every launch -->
+    <integer name="update_helper_days_before_reminding">0</integer>
+    <!-- Change to true to show every time, for testing -->
+    <bool name="update_helper_test_mode">false</bool>
+    <!-- Change modify button colors -->
+</resources>

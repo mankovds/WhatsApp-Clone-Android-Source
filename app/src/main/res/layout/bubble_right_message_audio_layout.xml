@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="3dp"
+    android:layout_marginRight="3dp"
+    android:layout_marginBottom="3dp"
+    android:background="@drawable/select_item_background_primary"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/date_general_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:enabled="false"
+        android:layout_margin="1dp"
+        android:background="@drawable/bb_state"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="@color/colorMessageText"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/message_layout"
+        android:padding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_item_background_primary"
+        android:gravity="end">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/bb_right"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/sender_name"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="4dp"
+                android:paddingTop="1dp"
+                android:paddingRight="4dp"
+                android:paddingBottom="1dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/replied_message_view"
+                layout="@layout/replied_message_view"
+                android:visibility="gone" />
+
+
+            <!--audio layout start-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="3dp"
+                android:orientation="horizontal">
+
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp">
+
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar_upload_audio_init"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar_upload_audio"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/bg_circle_audio_progress"
+                        android:visibility="gone" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/cancel_upload_audio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_close_gary_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/retry_upload_audio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_file_upload_gray_24dp" />
+
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar_download_audio_init"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar_download_audio"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/bg_circle_audio_progress"
+                        android:visibility="gone" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/cancel_download_audio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/transparent"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_close_gary_24dp" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/retry_download_audio_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/transparent"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_file_download_gary_24dp" />
+
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/pause_btn_audio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_stop_gray_24dp" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/play_btn_audio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_play_arrow_gray_24dp" />
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+                    <rm.com.audiowave.AudioWaveView
+                        android:id="@+id/audio_progress_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginBottom="16dp"
+                        app:animateExpansion="false"
+                        app:chunkHeight="24dp"
+                        app:chunkRadius="2dp"
+                        app:chunkSpacing="1dp"
+                        app:chunkWidth="3dp"
+                        app:minChunkHeight="3dp"
+                        app:touchable="true"
+                        app:waveColor="@color/colorAccent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="16dp"
+                        android:orientation="horizontal">
+                        <!-- Current Duration Label -->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/audio_current_duration"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="00:00"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+                        <!-- Total Duration Label -->
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/audio_total_duration"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="12sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/audio_user_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_image_holder" />
+            </LinearLayout>
+            <!--audio layout end-->
+
+
+            <include layout="@layout/bubble_message_date" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

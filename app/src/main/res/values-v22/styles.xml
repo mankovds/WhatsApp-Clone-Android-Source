@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:colorControlHighlight">@color/colorPrimaryLight</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- enable overlap of transitions -->
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <!-- ActionMode Styles -->
+        <item name="android:actionModeBackground">@color/colorActionMode</item>
+        <item name="android:backgroundStacked">@color/colorActionMode</item>
+        <item name="android:backgroundSplit">@color/colorActionMode</item>
+
+        <!--change popup color options menu-->
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+        <!--set font for texts view and buttons--><!--
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item> --><!-- target android sdk versions < 26 and > 14 if theme other than AppCompat -->
+    </style>
+
+
+
+</resources>

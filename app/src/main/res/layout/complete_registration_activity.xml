@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/completeRegistrationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/completeRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/complete_registration"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <include layout="@layout/shadow_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/complete_registration_optional"
+                android:textColor="@color/colorAccent" />
+            <FrameLayout
+                android:layout_width="234dp"
+                android:layout_height="234dp"
+                android:layout_margin="10dp">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/userAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bg_circle_image_holder"
+                    android:transitionName="userAvatar" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/addAvatar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    app:elevation="2dp"
+                    app:backgroundTint="@color/colorAccent"
+                    app:tint="@color/colorWhite"
+                    app:fabSize="normal"
+                    app:rippleColor="@color/colorWhiteLight"
+                    app:srcCompat="@drawable/ic_photo_camera_24dp" />
+            </FrameLayout>
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/username_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="16dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/login_input_background"
+                android:hint="@string/username"
+                android:inputType="textCapWords"
+                android:padding="16dp" />
+
+
+            <TextView
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/login_btn_background"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="@string/complete_registration"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+   </LinearLayout>
+</androidx.core.widget.NestedScrollView>

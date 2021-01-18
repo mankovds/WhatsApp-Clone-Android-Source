@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Date format -->
+    <string name="date_format_yesterday">Χθες</string>
+
+    <string name="number">Τηλεφωνικός αριθμός</string>
+    <string name="NoMessages">Δεν υπάρχουν ακόμα συζητήσεις, μπορείτε να ξεκινήσετε τώρα</string>
+    <string name="NoCalls">Καμία κλήση</string>
+    <string name="NoContacts">Δεν υπάρχουν επαφές. Δοκιμάστε ξανά αργότερα ή προσθέστε νέα</string>
+    <string name="NoResult">Τίποτα</string>
+    <string name="error_response_contacts">Δεν είναι δυνατή η ενημέρωση των επαφών σας.</string>
+    <string name="name_is_too_short">Το όνομα είναι πολύ μικρό</string>
+    <string name="select_picture">Επιλέξτε μια εικόνα</string>
+    <string name="new_group">Νέα ομάδα</string>
+    <string name="status">Η κατάστασή σας</string>
+    <string name="settings">Ρυθμίσεις</string>
+    <string name="refresh_contacts">Ανανέωση</string>
+    <string name="search">Αναζήτηση</string>
+    <string name="add_contact">Προσθήκη επαφής</string>
+    <string name="new_message">Νέο μήνυμα</string>
+    <string name="title_activity_add_members_to_group">Νέα ομάδα</string>
+    <string name="title_activity_settings">Ρυθμίσεις</string>
+    <string name="title_activity_edit_profile">Προφίλ</string>
+    <string name="edit">Επεξεργασία</string>
+    <string name="view_in_ad_book">Εμφάνιση στις επαφές</string>
+    <string name="next">Επομενο</string>
+    <string name="set_back_and_keep_calm_you_will_receive_an_sms_of_verification">Βάλτε πίσω και διατηρήστε την ηρεμία, θα λάβετε ένα sms επαλήθευσης</string>
+    <string name="resend">Δεν λάβατε κωδικό; Επαναλάβετε</string>
+    <string name="enter_the_code_below_to_verify">Εισαγάγετε τον παρακάτω κωδικό για επιβεβαίωση</string>
+    <string name="enter_your_code">-- -- -- -- -- --</string>
+    <string name="ok">OK</string>
+    <string name="please_enter_your_ver_code">Επαλήθευση του κωδικού σας:</string>
+    <string name="enter_a_val_number">Παρακαλώ εισάγετε τον τηλεφωνικό σας αριθμό.</string>
+    <string name="invite">Πρόσκληση</string>
+    <string name="your_current_status">Η κατάστασή μου</string>
+    <string name="select_your_new_status">Νέα ενημέρωση κατάστασης</string>
+    <string name="title_activity_status">Η κατάστασή μου</string>
+    <string name="Yes">Ναι</string>
+    <string name="No">No</string>
+    <string name="delete">Διαγραφή</string>
+    <string name="delete_status">Διαγραφή κατάστασης</string>
+    <string name="cancel">Άκυρο</string>
+    <string name="Ok">OK</string>
+    <string name="write_something">Νέο μήνυμα</string>
+    <string name="title_activity_edit_status">Επεξεργασία κατάστασης</string>
+    <string name="deleteALL">Διαγραφή όλων</string>
+    <string name="oops_something">Ωχ! Κάτι πήγε στραβά </string>
+    <string name="oops_something_crashed">Ωχ! κάτι πήγε στραβά . Στείλτε μια αναφορά στον προγραμματιστή</string>
+    <string name="no_status">***χωρίς κατασταση***</string>
+    <string name="no_username"> No username </string>
+    <string name="edit_status_activity_title">Νέα κατάσταση</string>
+    <string name="title_activity_edit_name">Εισάγετε το όνομά σας</string>
+    <string name="title_select_contacts">Οι επαφές μου</string>
+    <string name="success_response_contacts">Οι επαφές ενημερώθηκαν.</string>
+
+    <string name="exit">Έξοδος</string>
+    <string name="shareContact">Κοινή χρήση επαφής</string>
+
+    <!--actions user -->
+    <string name="isTyping">γράφει...</string>
+    <string name="isOffline">Εκτός Σύνδεσης</string>
+    <string name="isOnline">διαθέσιμος</string>
+
+
+    <!--end date format-->
+    <string name="search_">Αναζήτηση…</string>
+    <string name="add_new_member">Προσθήκη</string>
+    <string name="type_group_subject_here">Εισάγετε νέο θέμα</string>
+    <string name="provide_group_subject_and_optional_group_icon">Εισάγετε προαιρετικά ένα θέμα και ένα εικονίδιο ομάδας</string>
+    <string name="title_activity_edit_group_name">Εισάγετε νέο θέμα</string>
+    <string name="attach_camera">Κάμερα</string>
+    <string name="attach_gallery">Συλλογή</string>
+    <string name="media">Αρχεία</string>
+    <string name="clear_chat">Εκκαθάριση συνομιλίας</string>
+    <string name="view_contact">View Contact</string>
+    <string name="group_info">Πληροφορίες</string>
+    <string name="search_hint">Αναζήτηση</string>
+    <string name="alert_message_delete_conversation">Σίγουρα θέλετε να διαγράψετε τα μηνύματα σε αυτήν τη συνομιλία;</string>
+    <string name="hold_to_record">Ηχογράφηση φωνητικού μηνύματος</string>
+
+    <!-- Permissions strings start -->
+    <string name="record_audio_permission_message">Record audio permission allows you to  record audios. Please allow in App Settings for additional functionality.</string>
+    <string name="location_permission_message">get Location permission allows you access to your contacts. Please allow in App Settings for additional functionality.</string>
+    <string name="write_storage_permission_message">Write External permission allows us  access to your media. Please allow in App Settings for additional functionality.</string>
+    <string name="write_contacts_permission_message">Write Contacts permission allows you access to your contacts. Please allow in App Settings for additional functionality.</string>
+
+    <!--Permissions strings end -->
+
+    <string name="deleting_chat">"Διαγραφή συνομιλίας"</string>
+    <string name="copy_message">Αντιγραφή</string>
+    <string name="transfer_message">Προώθηση σε...</string>
+    <string name="message_delete">Διαγραφή μηνύματος;</string>
+    <string name="message_copy">Γραπτό μήνυμα</string>
+
+    <!--settings strings-->
+    <string name="notifications">Ειδοποιήσεις μηνυμάτων</string>
+    <string name="chats">Συνομιλίες</string>
+    <string name="account">Λογαριασμός</string>
+    <string name="delete_my_account">Διαγραφή λογαριασμού</string>
+    <string name="chat_settings">Ρυθμίσεις συνομιλίας</string>
+    <string name="enter_key_off">Το πλήκτρο Enter εισάγει νέα γραμμή</string>
+    <string name="enter_key_on">Το πλήκτρο Enter αποστέλλει το μήνυμα</string>
+    <string name="enter_key">Αποστολή με Enter</string>
+    <string name="message_font_size">Μέγεθος κειμένου</string>
+    <string name="message_font_size_summary">Μέγεθος κειμένου σε οθόνη συνομιλιών</string>
+    <string name="wallpaper">Φόντο</string>
+    <string name="conversation_tones_off">Αναπαραγωγή ήχων για εισερχόμενα και εξερχόμενα μηνύματα.</string>
+    <string name="message_notifications_settings">Message bildirimleri</string>
+    <string name="notifications_settings_tone">Ήχος ειδοποίησης</string>
+    <string name="default_settings">Προεπιλογή</string>
+    <string name="message_notifications_settings_vibrate">>Δόνηση</string>
+    <string name="message_notifications_settings_light">Φωτάκι</string>
+    <string name="call_notifications_settings_vibrate">>Δόνηση</string>
+    <string name="conversation_tones">Ήχος ειδοποίησης</string>
+    <string name="message_group_notifications_settings">Ειδοποιήσεις ομάδων</string>
+    <string name="title_activity_delete_account">Διαγραφή λογαριασμού</string>
+    <string name="title_activity_change_number">Νέος αριθμός</string>
+    <string name="title_activity_account_settings">Λογαριασμός</string>
+    <string name="call_notifications_settings">Ειδοποιήσεις κλήσεων</string>
+    <string name="call_ringtone">Κουδούνισμα</string>
+    <string name="message_notifications_settings_tone_silent">Αθόρυβο</string>
+    <string name="call_notifications_settings_tone_silent">Αθόρυβο</string>
+    <string name="select_one_at_least">"At least you must select one "</string>
+    <string name="participants">Μέλη:</string>
+    <string name="create_group_failed">Αποτυχία. Προσπαθήστε ξανά.</string>
+    <string name="slide_to_cancel_audio">σύρετε για άρνηση</string>
+    <string name="message_is_copied">Μήνυμα αντιγράφηκε</string>
+    <string name="of">" of "</string>
+    <string name="failed_upload_image">"Αδύνατη η φόρτωση της φωτογραφίας. Παρακαλώ δοκιμάστε ξανά."</string>
+
+    <!--group adapters start -->
+    <string name="exit_group">Έξοδος \"</string>
+    <string name="group_ex">\" ομάδα?</string>
+    <string name="exiting_group_dialog">" Έξοδος από ομάδα… "</string>
+    <string name="deleting_group_dialog">"Διαγραφή..."</string>
+    <string name="created_by_you_at">Δημιουργήσατε την ομάδα</string>
+    <string name="created_by">"Δημιουργήθηκε από "</string>
+    <string name="group_at">στο</string>
+    <string name="failed_to_delete_this_group_check_connection">Αδύνατος ο τερματισμός αυτής της ομάδας. Παρακαλώ δοκιμάστε ξανά.</string>
+    <string name="failed_to_exit_this_group_check_connection">Αδύνατη η έξοδος από την ομάδα. Παρακαλώ δοκιμάστε ξανά.</string>
+    <string name="adding_new_status">Νέα ενημέρωση κατάστασης</string>
+    <string name="add_to_group">"Προσθήκη "</string>
+    <string name="member_to_group">" Μέλος στην ομάδα"</string>
+    <string name="adding_member">" Προσθήκη μέλους … "</string>
+    <string name="you">Εσείς</string>
+    <!--group member options start -->
+    <string name="message_group_option">"Μήνυμα"</string>
+    <string name="view_group_option">"Προβολή "</string>
+    <string name="make_admin_group_option"> Ένας διαχειριστής</string>
+    <string name="make_member_group_option"> μέλος</string>
+    <string name="make_group_option"> Φτιαχνω, κανω </string>
+    <string name="remove_group_option">"Κατάργηση "</string>
+    <!--group member options end -->
+    <string name="remove_from_group">"Κατάργηση "</string>
+    <string name="from_group">" Από την ομάδα"</string>
+    <string name="failed_to_make_member_as_admin">Δεν μπορείτε να αλλάξετε διαχειριστές διότι δεν είστε διαχειριστής.</string>
+    <string name="failed_to_remove_member">Αδύνατη η κατάργηση του μέλους. Παρακαλώ δοκιμάστε ξανά.</string>
+    <!--group adapters end -->
+    <!--conversations and messages  adapters start-->
+    <string name="you_created_this_group">Δημιουργήσατε αυτήν την ομάδα</string>
+    <string name="he_created_this_group">" Δημιουργήθηκε αυτή η ομάδα"</string>
+    <string name="you_left">You left</string>
+    <string name="he_left">" left"</string>
+    <string name="no_application_to_view_pdf">Δεν υπάρχει διαθέσιμη εφαρμογή για προβολή του PDF</string>
+    <!--conversations and messages adapters start-->
+    <string name="transfer_message_to">"Μεταφορά μηνύματος ή Κοινή χρήση περιεχομένου σε "</string>
+    <string name="no_app_to_play_audio">"Δεν υπάρχει διαθέσιμη εφαρμογή για αναπαραγωγή ήχου "</string>
+    <string name="delete_all_status_dialog">Διαγραφή όλων των συνομιλιών</string>
+    <string name="deleting">Διαγραφή...</string>
+    <string name="updating_status">Ανάρτηση κατάστασης...</string>
+    <string name="your_status_updated_successfully">Ενημέρωση κατάστασης διαγράφηκε</string>
+
+
+    <string name="reply_message">Απάντηση</string>
+
+
+    <string name="message_notifications_settings_vibrate_off">Δόνηση Off</string>
+    <string name="message_notifications_settings_vibrate_on">Δόνηση On</string>
+    <string name="call_notifications_settings_vibrate_off">Δόνηση Off</string>
+    <string name="call_notifications_settings_vibrate_on">Δόνηση On</string>
+    <string name="enjoy_it">Απόλαυσέ το</string>
+    <string name="app_version">"Εκδοχή "</string>
+    <string name="alert_message_delete_account">Διαγραφή λογαριασμού; Η αναίρεση τέτοιας ενέργειας δεν είναι δυνατή. Η επανενεργοποίηση του λογαριασμού HELLO στο μέλλον, θα έχει ως αποτέλεσμα την απώλεια των δεδομένων σας.</string>
+    <string name="unexpected_reponse_from_server">Απροσδόκητη απόκριση από το διακομιστή</string>
+    <string name="you_send_messages"> Δεν είστε πλέον μέλος.</string>
+    <string name="failed_exit_group">Αποτυχία εξόδου. Προσπαθήστε ξανά.</string>
+    <string name="this_video_is_not_exist">Αυτό το βίντεο δεν είναι διαθέσιμο διότι κάτι δεν πάει καλά με το αρχείο βίντεο.</string>
+    <string name="this_image_is_not_exist">Αδύνατη η φόρτωση της φωτογραφίας. Παρακαλώ δοκιμάστε ξανά.</string>
+    <string name="this_audio_is_not_exist">Αυτός ο ήχος δεν είναι διαθέσιμος διότι κάτι δεν πάει καλά με το αρχείο ήχου.</string>
+    <string name="this_document_is_not_exist">Δε βρέθηκε κανένα έγγραφο</string>
+
+    <!--Directories strings-->
+
+    <string name="profile_photos">Φωτογραφία προφίλ επαφής</string>
+    <string name="images_directory">Εικόνες</string>
+    <string name="data_cache_directory">Αναζήτηση για αντίγραφα</string>
+    <string name="videos_directory">Βίντεο</string>
+    <string name="audios_directory">Ήχος</string>
+    <string name="documents_directory">Έγγραφο</string>
+    <string name="directory_wallpaper">Φόντο</string>
+    <string name="directory_sent">Παραδόθηκε</string>
+    <string name="video_thumbnail">Ονυξ του αντίχειρος</string>
+    <string name="image_saved">Η εικόνα αποθηκεύτηκε</string>
+    <string name="save_to_gallery">Αποθηκεύτηκε στην Έκθεση</string>
+    <string name="shareItem">share">Διαμοιρασμός</string>
+    <string name="this_message_empty">Αυτό το μήνυμα είναι κενό</string>
+    <string name="share_message">share">Διαμοιρασμός</string>
+    <string name="you_can_share_more_then_one">Δεν μπορείτε να μοιραστείτε περισσότερα από ένα στοιχεία</string>
+    <!--others -->
+    <string name="add_to_you_contact">ΠΡΟΣΘΗΚΗ ΤΟΥ ΑΤΟΜΟΥ ΣΤΙΣ ΕΠΑΦΕΣ ΣΑΣ </string>
+    <string name="status_and_phone">Κατάσταση και τηλέφωνο</string>
+
+    <!-- Rate Strings -->
+    <string name="rate_title">Τιμή %s</string>
+    <string name="rate_message">Αν σας αρέσει να χρησιμοποιείτε το %s, θα σας άρεσε λίγο να το αξιολογήσετε; Ευχαριστώ για την υποστήριξη!</string>
+    <string name="rate">Ναι, Τιμή %s</string>
+    <string name="rate_later">Θύμισέ μου αργότερα</string>
+    <string name="rate_cancel">Οχι ευχαριστώ</string>
+    <string name="rate_helper_google_play_url">https://play.google.com/store/apps/details?id=%s</string>
+    <string name="update">YES, Ενημέρωση %s</string>
+    <string name="update_title">Ενημέρωση %s</string>
+    <string name="update_app_message">Μια νέα έκδοση του HELLO είναι διαθέσιμη. Θέλετε να την εγκαταστήσετε τώρα; </string>
+    <string name="update_message_complete">"Αυτή η έκδοση του HELLO είναι πολύ παλιά και δεν λειτουργεί πλέον. Παρακαλώ μεταβείτε στο Google Play Store και κατεβάστε την τελευταία έκδοση."</string>
+    <!--calls strings-->
+    <string name="incoming_call">Εισερχόμενη κλήση</string>
+    <string name="clear_log_call">Εκκαθάριση ιστορικού</string>
+    <string name="voice_call">Φωνητική κλήση</string>
+    <string name="video_call">Βιντεοκλήση</string>
+    <string name="call_history">History</string>
+    <string name="title_calls">Πληρ/ίες κλήσης</string>
+    <string name="remove_from_log">Κατάργηση από ιστορικό κλήσεων</string>
+    <string name="block_user">Αποκλεισμός</string>
+    <string name="delete_call_dialog">Διαγραφή …</string>
+    <string name="call_select_voice">Φωνητική κλήση</string>
+    <string name="call_select_video">Βιντεοκλήση</string>
+    <string name="you_couldnt_call_this_user_network">Ελέγξτε τη σύνδεση στο διαδίκτυο του κινητού σας και δοκιμάστε ξανά.</string>
+    <string name="duration">Διάρκεια</string>
+    <string name="about_title">Σχετικά</string>
+    <string name="default_wallpaper">Προεπιλογή</string>
+    <string name="wallpaper_gallery">Συλλογή</string>
+    <string name="wallpaper_is_set">Αλλαγή φόντου επιτυχής</string>
+    <string name="you_can_copy_more_then_one">Δεν μπορείτε να αντιγράψετε περισσότερα από ένα στοιχεία</string>
+    <string name="documents">Έγγραφα</string>
+    <string name="links">Σύνδεσμοι</string>
+    <string name="this_a_pdf_file_document">PDF Έγγραφο</string>
+    <string name="title_activity_privacy"><![CDATA[Όροι χρήσης και Πολιτική απορρήτου]]></string>
+    <string name="english">Αγγλικά</string>
+    <string name="german">Γερμανός</string>
+    <string name="italian">Italian</string>
+    <string name="srbski">Σέρβος</string>
+    <string name="bosnisch">Βοσνιακά</string>
+    <string name="romaneste">Της Ρουμανίας</string>
+    <string name="french">γαλλική γλώσσα</string>
+    <string name="turski">Τουρκικά</string>
+    <string name="tschechisch">Τσεχίας</string>
+    <string name="grichisch">ελληνικά</string>
+    <string name="spanisch">ισπανικά</string>
+    <string name="kroatisch">Κροατία</string>
+    <string name="indonesisch">Ινδονησίας</string>
+    <string name="mazedonisch">Μακεδόνας</string>
+    <string name="rusisch">ρωσικός</string>
+    <string name="slovenisch">της Σλοβενίας</string>
+    <string name="title_language">Γλώσσα εφαρμογής</string>
+    <!--new strings-->
+
+    <string name="you_need_to_restart_the_application">Πρέπει να κάνετε επανεκκίνηση της εφαρμογής</string>
+
+    <string name="selected">Επιλέχθηκε</string>
+    <string name="current_language">current</string>
+
+    <string name="block_user_make_sure">Αποκλεισμός %s; Οι αποκλεισμένες επαφές δε θα μπορούν να σας καλούν ή να σας στέλνουν μηνύματα.</string>
+    <string name="unblock_user_make_sure">Θα καταργήσετε τον αποκλεισμό αυτού του χρήστη, οπότε θα μπορεί να σας καλέσει ή να σας στείλει μηνύματα. Είστε σίγουροι;</string>
+    <string name="unblock_user">Αποκλεισμός</string>
+    <string name="title_blocked_contacts">Αποκλεισμένοι</string>
+    <string name="missed_video_call">Αναπάντητη βιντεοκλήση</string>
+    <string name="missed_voice_call">Αναπάντητη κλήση</string>
+    <string name="outgoing_video_call">Εξερχόμενη βιντεοκλήση</string>
+    <string name="outgoing_voice_call">Εξερχόμενη φωνητική κλήση</string>
+
+    <string name="invitation_from">Πρόσκληση από</string>
+    <string name="your_session_expired">Η συνεδρία σας έληξε</string>
+    <!--new strings-->
+    <string name="click_on">Click on </string>
+    <string name="to_choose_your_country_n_and_enter_your_phone_number"> to choose your country   and enter your phone number</string>
+    <string name="username">Username</string>
+    <string name="complete_registration_optional">This is an optional step you can skip it without edit anything</string>
+    <string name="complete_registration">Complete Registration</string>
+    <string name="dialog_loading">Loading…</string>
+    <string name="get_started">Get started</string>
+    <string name="number_not_match">This number not match the first one you insert to verify .please try again</string>
+
+    <string name="you_can_select_your_favorite_language_from_here">You can select your favorite language from here</string>
+    <string name="signup_terms">By Proceeding you also agree to application’s Terms of Service and
+		Privacy Policy.
+	</string>
+    <string name="new_messages_notify">new messages</string>
+    <string name="messages_from_notify">messages from</string>
+    <string name="chats_notify">chats</string>
+    <string name="phone">Phone</string>
+    <string name="exit_group_prof">Exit group</string>
+    <string name="delete_group">Delete group</string>
+    <string name="participants_prof">Members</string>
+
+    <string name="chats_title_tab" >Chats</string>
+    <string name="connecting">Connecting ...</string>
+
+    <string name="unable_to_record_audio">Unable to record audio</string>
+    <string name="Attach_cant_open_media_selection">Can\\\'t find an app to select media.</string>
+    <string name="send_location">Send Location</string>
+    <string name="MyLocation">My location</string>
+    <string name="Map">Map</string>
+    <string name="Satellite">Satellite</string>
+    <string name="Hybrid">Hybrid</string>
+    <string name="MetersAway">m away</string>
+    <string name="KMetersAway">km away</string>
+    <string name="ChatLocation">Location</string>
+    <string name="ShareLocation">Share location</string>
+    <string name="GiphyFragmentPagerAdapter_gifs">GIFs</string>
+    <string name="GiphyFragmentPagerAdapter_stickers">Stickers</string>
+    <string name="GiphyActivity_error_while_retrieving_full_resolution_gif">Error while retrieving full resolution GIF</string>
+    <string name="giphy_activity_toolbar__search_gifs_and_stickers">Search GIFs and stickers</string>
+    <string name="date_format_today">TODAY</string>
+    <string name="call_swipe_to_answer">Swipe up to answer</string>
+    <string name="call_swipe_to_reject">Swipe down to reject</string>
+    <string name="app_needs_access_to_your_contacts_and_media_in_order_to_connect_with_friends">application needs access to your contacts and media in order to connect with friends, exchange messages, and make  calls</string>
+    <string name="app__requires_contacts_permission_in_order_to_attach_contact_information">Application requires Contacts permission in order to attach contact information, but it has been permanently denied. Please continue to the app settings menu, select \\\"Permissions\\\", and enable \\\"Contacts\\\".</string>
+    <string name="contact_permission_required">The contact permission is required to use this application</string>
+    <string name="all_permission_required">Those permissions are required</string>
+    <string name="app__requires_storage_permission_in_order_to_attach_media_information">Application requires the Storage permission in order to attach photos, , but it has been permanently denied. Please continue to the app settings menu, select \"Permissions\", and enable \"Storage\".</string>
+    <string name="conversation_row_image">Image</string>
+    <string name="conversation_row_location">Location</string>
+    <string name="conversation_row_gif">Gif</string>
+    <string name="conversation_row_video">Video</string>
+    <string name="conversation_row_audio">Audio</string>
+    <string name="conversation_row_document">Document</string>
+    <string name="calls_title_tab">Calls</string>
+    <string name="gifs_directory">Gifs</string>
+    <string name="to_capture_photos_and_video_allow_appp_access_to_the_camera">To capture photos and video, allow Isco access to the camera.</string>
+    <string name="appp_needs_the_camera_permission_to_take_photos_or_video">Application needs the Camera permission to take photos or video, but it has been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Camera\".</string>
+    <string name="appp_needs_camera_permissions_to_take_photos_or_video">Application needs Camera permissions to take photos or video</string>
+    <string name="Permissions_continue">Continue</string>
+    <string name="Permissions_not_now">Not now</string>
+    <string name="Permissions_permission_required">Permissions Required</string>
+    <!-- attachment_type_selector -->
+    <string name="attachment_type_selector__audio">Audio</string>
+    <string name="attachment_type_selector__audio_description">Audio</string>
+    <string name="attachment_type_selector__contact">Contact</string>
+    <string name="attachment_type_selector__contact_description">Contact</string>
+    <string name="attachment_type_selector__camera">Camera</string>
+    <string name="attachment_type_selector__camera_description">Camera</string>
+    <string name="attachment_type_selector__location">Location</string>
+    <string name="attachment_type_selector__location_description">Location</string>
+    <string name="attachment_type_selector__gif">GIF</string>
+    <string name="attachment_type_selector__gif_description">Gif</string>
+    <string name="attachment_type_selector__gallery_description">Image or video</string>
+    <string name="attachment_type_selector__file_description">File</string>
+    <string name="attachment_type_selector__gallery">Gallery</string>
+    <string name="attachment_type_selector__file">Document</string>
+    <string name="to_call_s_app_needs_access_to_your_microphone_and_camera">To call %s, Application needs access to your microphone and camera.</string>
+    <string name="app_needs_the_microphone_and_camera_permissions_in_order_to_call_s">Application needs the Microphone and Camera permissions in order to call %s, but they have been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Microphone\" and \"Camera\".</string>
+    <string name="to_answer_the_call_from_s_give_app_access_to_your_microphone">To answer the call from %s, give Application access to your microphone.</string>
+    <string name="app_requires_microphone_and_camera_permissions_in_order_to_make_or_receive_calls">Application requires Microphone and Camera permissions in order to make or receive calls, but they have been permanently denied. Please continue to app settings, select \"Permissions\", and enable \"Microphone\" and \"Camera\".</string>
+
+    <string name="he_edited_this_group">edited  the  group name</string>
+    <string name="he_make_member_this_group">make a user as member</string>
+    <string name="he_make_admin_this_group">make a user as admin</string>
+    <string name="he_added_this_group">added new member</string>
+    <string name="he_removed_this_group">removed a member</string>
+    <string name="you_edited_this_group">You edit this group name</string>
+    <string name="you_make_member_this_group">You make a user as member</string>
+    <string name="you_make_admin_this_group">You make a user as member</string>
+    <string name="you_added_this_group">You\'ve added new member</string>
+    <string name="you_removed_this_group">You\'ve removed a member</string>
+    <string name="title_activity_add_new_members_to_group">Add new members</string>
+    <string name="new_missed_call">You have a new missed call</string>
+    <string name="audio_call_notify">Audio Call</string>
+    <string name="video_call_notify">Video Call</string>
+    <string name="you_couldnt_call_this_user">Couldn\'t place call. This User is not available now please try later</string>
+    <string name="you_couldnt_call">Couldn\'t place call</string>
+    <string name="story_title_tab">Status</string>
+    <string name="just_now">Just Now</string>
+    <string name="my_story">My status</string>
+    <string name="reply">Reply</string>
+    <string name="type_here_to_create_your_story">Type here to create your story..!</string>
+    <string name="file_limit_size_upload_format">Files must be less than %sMB</string>
+    <string name="nothing_to_undo">There is nothing to undo</string>
+    <string name="retry">RETRY</string>
+    <string name="this_type_of_file_not_supported">This type of file is not supported</string>
+    <string name="plus_99">+99</string>
+    <string name="selected_items">%s selected</string>
+    <string name="this_message_unsent">This message is not already sent</string>
+    <string name="who_can_see_your_stories_updates">Who can see your stories updates</string>
+    <string name="changes_to_your_privacy_settings_won_t_affect_stories_updates_that_you_ve_sent_already">Changes to your privacy settings won\'t affect stories updates that you\'ve sent already</string>
+    <string name="my_contacts">My contacts</string>
+    <string name="my_contacts_except">My contacts except...</string>
+    <string name="my_contacts_with">My contacts with</string>
+    <string name="title_stories_privacy">Stories privacy</string>
+    <string name="select_all">Select all</string>
+    <string name="title_hide_stories_from">Hide stories from...</string>
+    <string name="title_sub_hide_stories_from">No contacts excluded</string>
+    <string name="title_share_stories_with">Share stories with...</string>
+    <string name="title_sub_share_stories_with">No contacts selected</string>
+    <string name="excluded_items">%s excluded</string>
+    <string name="loading">Loading...</string>
+    <string name="edit_video">Edit Video</string>
+    <string name="gallery">Gallery</string>
+    <string name="see_more">See more</string>
+    <string name="your_story_updates_will_disappear_after_24_hours">Your story updates will disappear after 24 hours</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="sending_reply">Sending reply ...</string>
+    <string name="viewed_by">Viewed By</string>
+    <string name="no_one_view_the_story">No one view the story</string>
+    <string name="Page2Title">Fast</string>
+    <string name="Page3Title">Free</string>
+    <string name="Page4Title">Secure</string>
+    <string name="Page5Title">Powerful</string>
+    <string name="Page1Message">Welcome to the era of fast and secure messaging. Please swipe to discover the features and register</string>
+    <string name="Page2Message"><![CDATA[delivers messages faster than<![CDATA[<br/>]]>any other application]></string>
+    <string name="Page3Message"><![CDATA[is free .<![CDATA[<br/>]]>No subscription fees]></string>
+    <string name="Page4Message"><![CDATA[keeps your messages safe<![CDATA[<br/>]]>from hacker attacks]></string>
+    <string name="Page5Message"><![CDATA[has no limits on the size of<![CDATA[<br/>]]>your media and chats]></string>
+    <string name="initializing">Initializing ...</string>
+    <string name="no_application_to_view_word">No Application Available to View WORD</string>
+    <string name="no_application_to_view_ppt">No Application Available to View POWER POINT</string>
+    <string name="no_application_to_view_excel">No Application Available to View EXCEL</string>
+    <string name="username_required">Username is required</string>
+    <string name="Hello_get">Hello, get</string>
+    <string name="so_you_can_easly">so we can easily chat  with each other !</string>
+    <string name="hi_i_m_using_app">Hi there! i\'m using</string>
+    <string name="contact_media_permission_required"><![CDATA[Media & contacts permissions are required to run the app normally]]></string>
+    <string name="PhoneMobile">PhoneMobile</string>
+    <string name="PhoneHome">PhoneHome</string>
+    <string name="my_stories">My stories</string>
+    <string name="sending_file_to">Sending File to</string>
+    <string name="you_ve_reached_the_limit">You can not add more then %d</string>
+    <string name="contacts_title_tab">Contacts</string>
+    <string name="you_cant_delete_dflt_status">You can\'t delete the default status</string>
+    <string name="last_seen">Last Seen</string>
+
+</resources>

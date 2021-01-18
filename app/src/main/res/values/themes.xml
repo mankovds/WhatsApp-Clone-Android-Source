@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="WhatsClone.LightTheme" parent="@style/AppTheme">
+        <item name="theme_type">light</item><!--
+        <item name="actionBarStyle">@style/WhatsClone.LightActionBar</item>
+        <item name="actionBarTabBarStyle">@style/WhatsClone.LightActionBar.TabBar</item>
+        <item name="actionModeBackground">@color/gray50</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_close_white_24dp</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/colorWhite</item>
+        <item name="alertDialogTheme">@style/AppCompatAlertDialogStyleLight</item>
+        <item name="android:alertDialogTheme">@style/AppCompatDialogStyleLight</item>-->
+<!--
+
+        <item name="emoji_tab_strip_background">@color/gray12</item>
+        <item name="emoji_tab_indicator">#66555555</item>
+        <item name="emoji_tab_underline">#44555555</item>
+        <item name="emoji_tab_seperator">@color/gray20</item>
+        <item name="emoji_text_color">@color/colorBlack</item>-->
+
+        <item name="conversation_emoji_toggle">@drawable/ic_emoticon_24dp</item>
+        <item name="conversation_keyboard_toggle">@drawable/ic_keyboard_gray_24dp</item>
+
+<!--
+        <item name="emoji_category_recent">@drawable/emoji_category_recent_light</item>--><!--
+        <item name="emoji_category_people">@drawable/emoji_category_people_light</item>
+        <item name="emoji_category_nature">@drawable/emoji_category_nature_light</item>
+        <item name="emoji_category_foods">@drawable/emoji_category_foods_light</item>
+        <item name="emoji_category_activity">@drawable/emoji_category_activity_light</item>
+        <item name="emoji_category_places">@drawable/emoji_category_places_light</item>
+        <item name="emoji_category_objects">@drawable/emoji_category_objects_light</item>
+        <item name="emoji_category_symbol">@drawable/emoji_category_symbol_light</item>
+        <item name="emoji_category_flags">@drawable/emoji_category_flags_light</item>
+        <item name="emoji_category_emoticons">@drawable/emoji_category_emoticons_light</item>-->
+
+        <item name="attachment_type_selector_background">@color/colorWhite</item>
+
+        <!--set font for texts view and buttons-->
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item> <!-- target android sdk versions < 26 and > 14 if theme other than AppCompat -->
+
+    </style>
+
+    <style name="RationaleDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/permission_rationale_dialog_corners</item>
+    </style>
+
+</resources>

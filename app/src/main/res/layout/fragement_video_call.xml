@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:visibility="visible">
+
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/colorBlack">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/chrono"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_switch_camera_white_24dp" />
+
+        <Chronometer
+            android:id="@+id/chrono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/disable_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/chrono"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_videocam_white_24dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/stopWatch"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/cancelCall"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:text="@string/connecting"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/cancelCall"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/bottom_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="6dp"
+        app:srcCompat="@drawable/btn_end_call" />
+
+
+    <FrameLayout
+        android:id="@+id/userImageLyout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="visible"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/audio" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/userImage"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:padding="2dp"
+            android:background="@drawable/bg_circle_image_holder" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/callerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_toRightOf="@id/userImageLyout"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+</RelativeLayout>

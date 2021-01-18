@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/story_create_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <com.strolink.whatsUp.ui.views.InputGeneralPanel
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+
+            <com.vanniktech.emoji.EmojiEditText
+                android:id="@+id/embedded_text_editor"
+                style="@style/ComposeStoryEditText"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:hint="@string/type_here_to_create_your_story"
+                android:maxLength="240"
+                android:padding="16dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhiteLight"
+                android:textSize="40sp"
+                tools:visibility="invisible">
+
+            </com.vanniktech.emoji.EmojiEditText>
+
+            <LinearLayout
+                android:id="@+id/story_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="horizontal">
+
+                <com.strolink.whatsUp.ui.views.EmojiToggleButton
+                    android:id="@+id/emoji_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/app_name"
+                    android:padding="16dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/story_text_style"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:text="T"
+                        android:textColor="@color/colorGray2"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/story_text_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        app:srcCompat="@drawable/ic_color_lens_white_24dp" />
+
+
+                </LinearLayout>
+
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/send_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="16dp"
+                    app:srcCompat="@drawable/ic_send_story_white_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.strolink.whatsUp.ui.views.InputGeneralPanel>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/reply_message"
+        android:icon="@drawable/ic_reply_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/reply"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/delete_message"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/delete"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/copy_message"
+        android:icon="@drawable/ic_content_copy_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/copy_message"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/share_content"
+        android:icon="@drawable/ic_share_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/share_message"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/transfer_message"
+        android:icon="@drawable/ic_transfer_white_24dp"
+        android:orderInCategory="100"
+        android:title="@string/transfer_message"
+        app:showAsAction="always" />
+</menu>

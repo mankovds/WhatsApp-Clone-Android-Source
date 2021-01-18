@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_item_rect_ripple"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="6dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/image_profile_margin">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/story_image"
+                android:layout_width="@dimen/image_profile_width"
+                android:layout_height="@dimen/image_profile_height"
+                android:layout_gravity="center"
+                android:src="@drawable/bg_circle_image_holder" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/select_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/bg_select_icon"
+                android:gravity="bottom|right"
+                android:padding="3dp"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_done_24dp" />
+
+        </FrameLayout>
+
+
+        <com.strolink.whatsUp.ui.RelativeTimeTextView
+            android:id="@+id/story_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            android:textColor="@color/colorMessageText"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/retry_upload_story"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="?attr/selectableItemBackground"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_error_black_24dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Please try again"
+                    android:textColor="@color/colorRedDark"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/seen_story_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_see_story_24dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/seen_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="22"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!--
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/forward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="visible"
+                    app:srcCompat="@drawable/ic_see_story_24dp"/>-->
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/view_margin_left"
+        android:layout_marginRight="@dimen/view_margin_right"
+        android:background="@color/colorGray" />
+</LinearLayout>
